@@ -1,6 +1,7 @@
 .projects {
   padding: 4rem 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--bg-secondary);
+  transition: background-color var(--transition-normal);
 }
 
 .container {
@@ -11,5 +12,5 @@
 .projects h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-primary);
 }

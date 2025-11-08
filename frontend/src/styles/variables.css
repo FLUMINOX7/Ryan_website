@@ -1,22 +1,30 @@
+/* Thème clair (défaut) */
 :root {
-  /* Couleurs principales */
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
+  /* Couleurs principales - Thème Lumineux (Blanc + Rouge Écarlate) */
+  --primary-color: #a91d3a; /* Rouge bordeaux foncé */
+  --secondary-color: #c73659; /* Rouge foncé secondaire */
+  --accent-color: #8b1538; /* Rouge très foncé */
   
   /* Couleurs de fond */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
-  --bg-dark: #333333;
+  --bg-tertiary: #e9ecef;
+  --bg-header: rgba(255, 255, 255, 0.95);
   
   /* Couleurs de texte */
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-light: #999999;
-  --text-white: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #6b6b6b;
+  --text-inverse: #ffffff;
+  
+  /* Bordures */
+  --border-color: #e0e0e0;
+  
+  /* Ombres */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.1);
   
   /* Typographie */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -40,9 +48,33 @@
   --border-radius: 8px;
   --border-radius-sm: 4px;
   --border-radius-lg: 16px;
+}
+
+/* Thème sombre (Noir + Violet foncé) */
+[data-theme="dark"] {
+  /* Couleurs principales - Thème Ténèbres (Noir + Violet Foncé) */
+  --primary-color: #7c3aed; /* Violet foncé */
+  --secondary-color: #a78bfa; /* Violet plus clair */
+  --accent-color: #5b21b6; /* Violet très foncé */
+  
+  /* Couleurs de fond */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+  --bg-header: rgba(10, 10, 10, 0.95);
+  
+  /* Couleurs de texte */
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --text-inverse: #1a1a1a;
+  
+  /* Bordures */
+  --border-color: #2a2a2a;
   
   /* Ombres */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.5);
 }

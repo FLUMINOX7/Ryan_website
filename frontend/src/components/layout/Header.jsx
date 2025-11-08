@@ -1,7 +1,8 @@
 import React from 'react';
+import ThemeToggle from '../common/ThemeToggle';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="header">
       <nav className="nav">
@@ -15,6 +16,7 @@ const Header = () => {
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </nav>
     </header>
   );
