@@ -1,9 +1,9 @@
 /* Thème clair (défaut) */
 :root {
   /* Couleurs principales - Thème Lumineux (Blanc + Rouge Écarlate) */
-  --primary-color: #dc143c; /* Rouge écarlate */
-  --secondary-color: #ff6b6b; /* Rouge plus clair */
-  --accent-color: #b91c1c; /* Rouge foncé */
+  --primary-color: #a91d3a; /* Rouge bordeaux foncé */
+  --secondary-color: #c73659; /* Rouge foncé secondaire */
+  --accent-color: #8b1538; /* Rouge très foncé */
   
   /* Couleurs de fond */
   --bg-primary: #ffffff;
