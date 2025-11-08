@@ -19,12 +19,22 @@
   gap: 2rem;
 }
 
+.logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .logo h1 {
   margin: 0;
   font-size: 1.5rem;
   color: var(--primary-color);
   font-weight: 700;
   transition: color var(--transition-fast);
+}
+
+.logo:hover h1 {
+  color: var(--secondary-color);
+  transform: scale(1.05);
 }
 
 .nav-links {

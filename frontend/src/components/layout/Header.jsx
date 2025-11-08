@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ThemeToggle from '../common/ThemeToggle';
 import './Header.css';
 
@@ -6,15 +7,14 @@ const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="logo">
+        <Link to="/" className="logo">
           <h1>Ryan</h1>
-        </div>
+        </Link>
         <ul className="nav-links">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#experience">Parcours</a></li>
-          <li><a href="#passions">Passions</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/about">À propos</Link></li>
+          <li><Link to="/passions">Passions</Link></li>
+          <li><Link to="/projects">Projets</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </nav>
