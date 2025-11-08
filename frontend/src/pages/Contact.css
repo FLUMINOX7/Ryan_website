@@ -60,6 +60,11 @@
   transition: all var(--transition-fast);
 }
 
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ef4444;
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
@@ -67,9 +72,41 @@
   box-shadow: 0 0 0 3px rgba(169, 29, 58, 0.1);
 }
 
+.form-group input.error:focus,
+.form-group textarea.error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
 [data-theme="dark"] .form-group input:focus,
 [data-theme="dark"] .form-group textarea:focus {
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.validation-error {
+  display: block;
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  animation: slideIn 0.2s ease;
+}
+
+.character-count {
+  text-align: right;
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-top: 0.25rem;
+}
+
+.email-limit-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.email-limit-info p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 .form-group textarea {
