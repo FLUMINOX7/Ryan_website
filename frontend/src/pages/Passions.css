@@ -1,0 +1,22 @@
+.passions {
+  padding: 4rem 2rem;
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-normal);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.passions h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.passions p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
