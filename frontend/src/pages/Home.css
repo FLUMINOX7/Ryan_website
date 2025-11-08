@@ -1,5 +1,7 @@
 .home {
   min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-normal);
 }
 
 .hero {
@@ -15,12 +17,16 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero p {
   font-size: 1.5rem;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 768px) {
