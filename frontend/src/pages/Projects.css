@@ -1,6 +1,6 @@
 .projects {
   padding: 4rem 2rem;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   transition: background-color var(--transition-normal);
 }
 
