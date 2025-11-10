@@ -1,7 +1,10 @@
 import React from 'react';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 import './About.css';
 
 const About = () => {
+  useDocumentTitle('À propos');
+
   return (
     <section className="about">
       <div className="container">
