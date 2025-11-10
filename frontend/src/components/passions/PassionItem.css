@@ -1,0 +1,286 @@
+.passion-item {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.passion-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: var(--passion-color);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  transform-origin: top;
+}
+
+.passion-item:hover::before {
+  transform: scaleY(1);
+}
+
+.passion-item.expanded {
+  border-color: var(--passion-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.passion-item.expanded::before {
+  transform: scaleY(1);
+}
+
+.passion-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.passion-header:hover {
+  background-color: var(--bg-primary);
+}
+
+.passion-icon-wrapper {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--passion-color), transparent);
+  border-radius: 50%;
+  position: relative;
+}
+
+.passion-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background-color: var(--bg-secondary);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.passion-icon {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.passion-main-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.passion-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.passion-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.passion-year {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.passion-short-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.expand-button {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expand-button:hover {
+  border-color: var(--passion-color);
+  background-color: var(--passion-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron.rotated {
+  transform: rotate(180deg);
+}
+
+.passion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.passion-content.visible {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.passion-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--passion-color),
+    transparent
+  );
+  margin: 0 2rem;
+}
+
+.passion-details {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.passion-description h4,
+.passion-skills h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.passion-description h4::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: var(--passion-color);
+  border-radius: 2px;
+}
+
+.passion-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid var(--passion-color);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--passion-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .passion-header {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .passion-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .passion-icon {
+    font-size: 1.75rem;
+  }
+  
+  .passion-title {
+    font-size: 1.25rem;
+  }
+  
+  .passion-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .passion-details {
+    padding: 1.5rem;
+  }
+  
+  .passion-divider {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .passion-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+  }
+  
+  .expand-button {
+    align-self: flex-end;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+  
+  .passion-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .passion-icon {
+    font-size: 1.5rem;
+  }
+  
+  .passion-main-info {
+    width: 100%;
+    padding-right: 3rem;
+  }
+}
