@@ -12,8 +12,8 @@ const Header = ({ theme, toggleTheme }) => {
         </Link>
         <ul className="nav-links">
           <li><Link to="/about">À propos</Link></li>
-          <li><Link to="/passions">Passions</Link></li>
           <li><Link to="/projects">Projets</Link></li>
+          <li><Link to="/passions">Passions</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
