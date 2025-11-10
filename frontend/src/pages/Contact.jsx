@@ -1,8 +1,11 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 import './Contact.css';
 
 const Contact = () => {
+  useDocumentTitle('Contact');
+  
   const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
