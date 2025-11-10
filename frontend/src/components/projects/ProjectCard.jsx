@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
+  const getStatusLabel = (status) => {
+    return status === 'terminé' ? 'Terminé' : 'En cours';
+  };
+
+  const getStatusClass = (status) => {
+    return status === 'terminé' ? 'status-completed' : 'status-in-progress';
+  };
+
   return (
     <div className="project-card">
       <div className="project-image-container">
@@ -14,7 +22,9 @@ const ProjectCard = ({ project }) => {
             e.target.src = 'https://via.placeholder.com/400x250/7c3aed/ffffff?text=' + encodeURIComponent(project.title);
           }}
         />
-        {project.featured && <span className="featured-badge">En vedette</span>}
+        <span className={`status-badge ${getStatusClass(project.status)}`}>
+          {getStatusLabel(project.status)}
+        </span>
       </div>
       
       <div className="project-content">

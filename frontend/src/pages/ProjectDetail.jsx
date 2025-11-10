@@ -33,6 +33,14 @@ const ProjectDetail = () => {
     return new Date(dateString).toLocaleDateString('fr-FR', options);
   };
 
+  const getStatusLabel = (status) => {
+    return status === 'terminé' ? 'Terminé' : 'En cours';
+  };
+
+  const getStatusClass = (status) => {
+    return status === 'terminé' ? 'status-completed' : 'status-in-progress';
+  };
+
   return (
     <section className="project-detail">
       <div className="container">
@@ -46,7 +54,9 @@ const ProjectDetail = () => {
         <div className="project-detail-header">
           <div className="project-meta">
             <span className="project-date">{formatDate(project.date)}</span>
-            {project.featured && <span className="featured-tag">En vedette</span>}
+            <span className={`status-tag ${getStatusClass(project.status)}`}>
+              {getStatusLabel(project.status)}
+            </span>
           </div>
           <h1 className="project-detail-title">{project.title}</h1>
           <p className="project-tagline">{project.shortDescription}</p>
@@ -113,6 +123,12 @@ const ProjectDetail = () => {
 
             <div className="project-info-box">
               <h3>Informations</h3>
+              <div className="info-item">
+                <span className="info-label">Statut</span>
+                <span className={`info-value status-value ${getStatusClass(project.status)}`}>
+                  {getStatusLabel(project.status)}
+                </span>
+              </div>
               <div className="info-item">
                 <span className="info-label">Date de création</span>
                 <span className="info-value">{formatDate(project.date)}</span>

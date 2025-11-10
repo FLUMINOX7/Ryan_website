@@ -39,8 +39,7 @@
   font-size: 0.9rem;
 }
 
-.featured-tag {
-  background-color: var(--primary-color);
+.status-tag {
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
@@ -48,6 +47,14 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.status-tag.status-completed {
+  background-color: #10b981; /* Vert pour terminé */
+}
+
+.status-tag.status-in-progress {
+  background-color: #f59e0b; /* Orange pour en cours */
 }
 
 .project-detail-title {
@@ -195,6 +202,23 @@
 .info-value {
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.info-value.status-value {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.info-value.status-value.status-completed {
+  background-color: #10b981;
+}
+
+.info-value.status-value.status-in-progress {
+  background-color: #f59e0b;
 }
 
 .project-not-found {

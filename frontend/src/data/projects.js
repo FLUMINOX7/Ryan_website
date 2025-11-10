@@ -10,7 +10,7 @@ export const projects = [
     demo: null,
     image: '/assets/images/portfolio.jpg',
     date: '2025-11-10',
-    featured: true
+    status: 'en-cours' // 'terminé' ou 'en-cours'
   },
   // Exemples de projets - à remplacer par vos vrais projets
   {
@@ -23,7 +23,7 @@ export const projects = [
     demo: null,
     image: '/assets/images/project-placeholder.jpg',
     date: '2025-10-15',
-    featured: false
+    status: 'terminé'
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const projects = [
     demo: null,
     image: '/assets/images/project-placeholder.jpg',
     date: '2025-08-20',
-    featured: false
+    status: 'terminé'
   }
 ];
 
