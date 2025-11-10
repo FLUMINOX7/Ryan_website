@@ -7,6 +7,7 @@ import About from './pages/About';
 import Passions from './pages/Passions';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 import useTheme from './hooks/useTheme';
 import './styles/global.css';
 import './App.css';
@@ -25,6 +26,7 @@ function App() {
             <Route path="/passions" element={<Passions />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
