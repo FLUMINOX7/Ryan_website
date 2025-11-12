@@ -198,6 +198,31 @@
   margin: 0;
 }
 
+.passion-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.passion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--passion-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.passion-link:hover {
+  gap: 0.75rem;
+  text-decoration: underline;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
