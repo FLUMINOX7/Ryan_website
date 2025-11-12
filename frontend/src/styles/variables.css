@@ -2,6 +2,7 @@
 :root {
   /* Couleurs principales - Thème Lumineux (Blanc + Rouge Écarlate) */
   --primary-color: #a91d3a; /* Rouge bordeaux foncé */
+  --primary-hover: #8b1538; /* Rouge bordeaux encore plus foncé au survol */
   --secondary-color: #c73659; /* Rouge foncé secondaire */
   --accent-color: #8b1538; /* Rouge très foncé */
   
@@ -54,6 +55,7 @@
 [data-theme="dark"] {
   /* Couleurs principales - Thème Ténèbres (Noir + Violet Foncé) */
   --primary-color: #7c3aed; /* Violet foncé */
+  --primary-hover: #6d28d9; /* Violet encore plus foncé au survol */
   --secondary-color: #a78bfa; /* Violet plus clair */
   --accent-color: #5b21b6; /* Violet très foncé */
   

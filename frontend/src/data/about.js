@@ -2,127 +2,185 @@
 
 export const aboutData = {
   intro: {
-    name: "Ryan",
-    title: "Développeur Full Stack & Passionné d'Informatique",
-    description: "Étudiant passionné par le développement web et les nouvelles technologies, je cherche constamment à apprendre et à relever de nouveaux défis. Mon objectif est de créer des solutions numériques innovantes et accessibles.",
-    image: "/assets/images/profile.jpg", // À remplacer par votre vraie photo
+    name: "MARIA PAUL Ryan",
+    title: "Étudiant en 3e année de BUT Informatique en alternance",
+    description: "Passionné par l'informatique depuis mon plus jeune âge, j'ai découvert ce domaine grâce aux jeux vidéo, avant de m'intéresser à la création et aux mécanismes des logiciels. Aujourd'hui alternant en développement informatique chez Allianz, je combine apprentissage théorique et expérience professionnelle. Curieux et motivé, je m'investis dans la maîtrise de nouvelles technologies et dans le travail en équipe, avec pour ambition de contribuer à des projets innovants dans le secteur numérique.",
+    image: "/assets/images/profile.jpg",
     location: "France",
     email: "ryanmariapaul7@gmail.com"
   },
 
-  journey: {
-    title: "Mon Parcours",
-    description: "Découvrez mon cheminement académique et professionnel dans le monde de l'informatique.",
-    timeline: [
+  education: {
+    title: "Formations",
+    description: "Mon parcours académique",
+    items: [
       {
         id: 1,
-        type: "education", // education ou experience
-        title: "Licence Informatique",
-        institution: "Université [Nom]",
-        location: "France",
+        title: "BUT Informatique (alternance)",
+        institution: "Université Sorbonne Paris Nord - IUT de Villetaneuse",
+        location: "Villetaneuse, France",
         period: "2023 - 2026",
-        description: "Formation approfondie en informatique couvrant le développement logiciel, les bases de données, les réseaux et l'algorithmique. Projets pratiques en équipe et apprentissage des méthodologies agiles.",
+        description: "Formation pratique en développement logiciel, bases de données, réseaux, systèmes et gestion de projet. SAE (projets universitaires en autonomie) permettant d'appliquer les connaissances théoriques sur des cas concrets. Alternance depuis la 2ème année pour consolider les acquis par la pratique professionnelle.",
         current: true
       },
       {
         id: 2,
-        type: "education",
-        title: "Baccalauréat Scientifique",
-        institution: "Lycée [Nom]",
+        title: "BAC Général - Mention Bien",
+        institution: "Lycée privée l'Espérance",
         location: "France",
         period: "2020 - 2023",
-        description: "Spécialité Mathématiques et Numérique et Sciences Informatiques (NSI). Découverte de la programmation et des bases de l'algorithmique.",
+        description: "Spécialité NSI (Numérique et Sciences Informatiques). Première véritable immersion dans le développement informatique. Projet de terminale : développement d'un jeu vidéo sur 2 mois (Hero Legacy), confirmant ma passion pour l'informatique et mon envie d'en faire mon métier.",
         current: false
-      },
+      }
+    ]
+  },
+
+  experience: {
+    title: "Expériences Professionnelles",
+    description: "Mon parcours professionnel",
+    items: [
       {
-        id: 3,
-        type: "experience",
-        title: "Développeur Web Freelance",
-        institution: "Projets Personnels",
-        location: "Remote",
-        period: "2024 - Présent",
-        description: "Développement de sites web et d'applications pour divers clients. Gestion complète des projets de la conception à la mise en production.",
+        id: 1,
+        title: "Apprenti Développeur Informatique",
+        company: "Allianz",
+        location: "France",
+        period: "2024 - Aujourd'hui",
+        description: "Développement d'un script permettant d'automatiser certaines étapes de traitements comptables. Maintenance et amélioration d'applications internes. Confrontation aux réalités du monde professionnel et utilisation d'outils et langages non abordés en cours.",
         current: true
       },
       {
-        id: 4,
-        type: "experience",
-        title: "Stage Développement Web",
-        institution: "Entreprise [Nom]",
+        id: 2,
+        title: "Stage de 3ème",
+        company: "Pharmacie Pasteur",
         location: "France",
-        period: "Été 2024",
-        description: "Stage de découverte du développement web professionnel. Participation au développement d'une application interne et apprentissage des bonnes pratiques.",
+        period: "2020",
+        description: "Rangement du stock et réapprovisionnement. Échanges avec les salariés pour découvrir leur métier et comprendre le fonctionnement de l'entreprise.",
         current: false
       }
     ]
   },
 
   skills: {
-    title: "Mes Compétences",
-    description: "Technologies et outils que je maîtrise à différents niveaux.",
-    categories: [
-      {
-        id: 1,
-        name: "Frontend",
-        icon: "🎨",
-        skills: [
-          { name: "HTML/CSS", level: 90 },
-          { name: "JavaScript", level: 85 },
-          { name: "React", level: 80 },
-          { name: "TypeScript", level: 70 },
-          { name: "Tailwind CSS", level: 75 }
-        ]
-      },
-      {
-        id: 2,
-        name: "Backend",
-        icon: "⚙️",
-        skills: [
-          { name: "Node.js", level: 75 },
-          { name: "Express", level: 70 },
-          { name: "Python", level: 80 },
-          { name: "SQL", level: 75 },
-          { name: "MongoDB", level: 65 }
-        ]
-      },
-      {
-        id: 3,
-        name: "Outils & Autres",
-        icon: "🛠️",
-        skills: [
-          { name: "Git/GitHub", level: 85 },
-          { name: "VS Code", level: 90 },
-          { name: "Linux", level: 70 },
-          { name: "Docker", level: 60 },
-          { name: "Figma", level: 65 }
-        ]
-      }
-    ]
+    title: "Compétences",
+    description: "Mes compétences techniques et comportementales",
+    hardSkills: {
+      title: "Hard Skills",
+      description: "Compétences techniques",
+      categories: [
+        {
+          id: 1,
+          name: "Langages de Programmation",
+          icon: "💻",
+          skills: [
+            { name: "Python", level: 85 },
+            { name: "JavaScript", level: 80 },
+            { name: "Java", level: 75 },
+            { name: "TypeScript", level: 65 },
+            { name: "VBA", level: 70 },
+            { name: "SQL", level: 85 },
+            { name: "HTML/CSS", level: 85 }
+          ]
+        },
+        {
+          id: 2,
+          name: "Frameworks & Bibliothèques",
+          icon: "⚛️",
+          skills: [
+            { name: "React", level: 80 },
+            { name: "Next.js", level: 75 },
+            { name: "Vite", level: 80 },
+            { name: "FastAPI", level: 75 },
+            { name: "Django", level: 70 },
+            { name: "Flutter", level: 70 }
+          ]
+        },
+        {
+          id: 3,
+          name: "Outils de Développement",
+          icon: "🛠️",
+          skills: [
+            { name: "Git/GitHub", level: 90 },
+            { name: "Visual Studio Code", level: 90 },
+            { name: "Docker", level: 70 },
+            { name: "GitHub Actions", level: 75 },
+            { name: "PostgreSQL", level: 80 }
+          ]
+        }
+      ]
+    },
+    softSkills: {
+      title: "Soft Skills",
+      description: "Compétences comportementales",
+      skills: [
+        {
+          id: 1,
+          name: "Travail en équipe",
+          icon: "🤝",
+          description: "Collaboration efficace sur des projets en équipe, SAE et alternance",
+          level: 85
+        },
+        {
+          id: 2,
+          name: "Résolution de problèmes",
+          icon: "🧩",
+          description: "Analyse et résolution méthodique de problèmes complexes",
+          level: 80
+        },
+        {
+          id: 3,
+          name: "Autonomie",
+          icon: "🎯",
+          description: "Capacité à mener des projets de manière autonome",
+          level: 85
+        },
+        {
+          id: 4,
+          name: "Adaptabilité",
+          icon: "🔄",
+          description: "Apprentissage rapide de nouvelles technologies et méthodologies",
+          level: 80
+        },
+        {
+          id: 5,
+          name: "Communication",
+          icon: "💬",
+          description: "Communication claire des idées techniques et non-techniques",
+          level: 75
+        },
+        {
+          id: 6,
+          name: "Curiosité",
+          icon: "🔍",
+          description: "Veille technologique et apprentissage continu",
+          level: 90
+        }
+      ]
+    }
   },
 
   motivation: {
     title: "Pourquoi l'Informatique ?",
-    content: "Ma passion pour l'informatique est née de ma curiosité naturelle pour comprendre comment fonctionnent les choses. J'ai été fasciné par la capacité de créer des solutions qui peuvent avoir un impact réel sur la vie des gens. L'informatique offre un équilibre parfait entre créativité et logique, permettant de transformer des idées abstraites en applications concrètes. Ce qui me motive le plus, c'est l'apprentissage constant : les technologies évoluent rapidement, offrant toujours de nouveaux défis à relever et de nouvelles compétences à acquérir. J'aime particulièrement le développement web car il combine aspects visuels et techniques, permettant de créer des expériences utilisateur engageantes et performantes.",
+    content: "Depuis mon plus jeune âge, l'informatique a occupé une place importante dans mon quotidien. Comme beaucoup, c'est par le biais des jeux vidéo que j'ai découvert cet univers. Mais très vite, ma curiosité naturelle m'a poussé à aller au-delà de l'utilisation et à comprendre les mécanismes qui se cachent derrière ces programmes interactifs. Ce goût pour la découverte s'est affirmé au fil des années et a orienté progressivement mes choix scolaires et professionnels. En classe de première, j'ai choisi la spécialité NSI, ce qui m'a offert une première véritable immersion dans le développement informatique. En terminale, le projet de jeu vidéo a été une révélation : j'ai pris plaisir à coder, résoudre des problèmes, tester, améliorer. Ce travail personnel a confirmé ma passion pour l'informatique et mon envie d'en faire mon métier.",
     highlights: [
       {
-        icon: "💡",
-        title: "Créativité",
-        description: "Transformer des idées en solutions concrètes"
+        icon: "🎮",
+        title: "Découverte ludique",
+        description: "L'univers des jeux vidéo comme porte d'entrée"
+      },
+      {
+        icon: "�",
+        title: "Curiosité naturelle",
+        description: "Comprendre les mécanismes derrière les programmes"
       },
       {
         icon: "🚀",
-        title: "Innovation",
-        description: "Utiliser les dernières technologies"
-      },
-      {
-        icon: "🎯",
-        title: "Impact",
-        description: "Créer des outils qui facilitent la vie"
+        title: "Créativité technique",
+        description: "Créer des solutions de A à Z"
       },
       {
         icon: "📈",
-        title: "Évolution",
-        description: "Apprendre continuellement de nouvelles choses"
+        title: "Apprentissage continu",
+        description: "Toujours apprendre et relever de nouveaux défis"
       }
     ]
   },
@@ -130,21 +188,21 @@ export const aboutData = {
   professionalGoals: {
     title: "Mon Projet Professionnel",
     shortTerm: {
-      title: "Court Terme",
+      title: "Court & Moyen Terme",
       goals: [
-        "Terminer ma licence en informatique avec mention",
-        "Développer des projets open-source pour contribuer à la communauté",
-        "Obtenir des certifications en développement web moderne",
-        "Participer à des hackathons et événements tech"
+        "Obtenir le BUT Informatique et poursuivre en école d'ingénieur en alternance",
+        "Consolider mon expérience professionnelle chez Allianz",
+        "Affiner mon choix de spécialisation entre développement logiciel, cybersécurité et intelligence artificielle",
+        "Contribuer à des projets open-source et développer des projets personnels innovants"
       ]
     },
     longTerm: {
       title: "Long Terme",
       goals: [
-        "Devenir développeur full-stack senior dans une entreprise innovante",
-        "Me spécialiser dans l'architecture cloud et les systèmes distribués",
-        "Encadrer et former de jeunes développeurs",
-        "Lancer ma propre startup dans le domaine de la tech"
+        "Occuper un poste à fort enjeu technique dans un environnement dynamique et stimulant",
+        "Me spécialiser dans un domaine porteur (développement logiciel, cybersécurité ou IA)",
+        "Continuer à apprendre et évoluer vers des fonctions à responsabilités",
+        "Participer à la création ou au développement d'une start-up dans le domaine du numérique"
       ]
     }
   },
@@ -152,23 +210,23 @@ export const aboutData = {
   values: [
     {
       icon: "🤝",
-      title: "Collaboration",
-      description: "Le travail d'équipe mène au succès"
+      title: "Travail en équipe",
+      description: "La collaboration mène à des solutions plus riches"
     },
     {
       icon: "💪",
       title: "Persévérance",
-      description: "Ne jamais abandonner face aux défis"
+      description: "Sortir de ma zone de confort pour progresser"
     },
     {
       icon: "🎓",
-      title: "Apprentissage",
-      description: "Toujours chercher à progresser"
+      title: "Apprentissage continu",
+      description: "Toujours chercher à maîtriser de nouvelles technologies"
     },
     {
       icon: "✨",
-      title: "Qualité",
-      description: "Livrer du code propre et maintenable"
+      title: "Qualité du code",
+      description: "Appliquer les bonnes pratiques et la rigueur professionnelle"
     }
   ]
 };

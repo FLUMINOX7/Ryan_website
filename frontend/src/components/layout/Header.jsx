@@ -8,7 +8,7 @@ const Header = ({ theme, toggleTheme }) => {
     <header className="header">
       <nav className="nav">
         <Link to="/" className="logo">
-          <h1>Ryan</h1>
+          <h1>MARIA PAUL Ryan</h1>
         </Link>
         <ul className="nav-links">
           <li><Link to="/about">À propos</Link></li>

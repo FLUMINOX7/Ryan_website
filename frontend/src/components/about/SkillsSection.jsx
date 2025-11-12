@@ -1,38 +1,99 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SkillsSection.css';
 
 const SkillsSection = ({ skillsData }) => {
+  const [openCategories, setOpenCategories] = useState([]);
+
+  const toggleCategory = (id) => {
+    setOpenCategories(prev => 
+      prev.includes(id) 
+        ? prev.filter(catId => catId !== id)
+        : [...prev, id]
+    );
+  };
+
   return (
     <section className="skills-section">
       <h2>{skillsData.title}</h2>
       <p className="skills-description">{skillsData.description}</p>
       
-      <div className="skills-categories">
-        {skillsData.categories.map((category) => (
-          <div key={category.id} className="skill-category">
-            <div className="category-header">
-              <span className="category-icon">{category.icon}</span>
-              <h3>{category.name}</h3>
-            </div>
-            
-            <div className="skills-list">
-              {category.skills.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <div className="skill-info">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
+      <div className="skills-container">
+        {/* Hard Skills Section */}
+        <div className="skills-main-section hard-skills-section">
+          <h3 className="skills-main-title">
+            <span className="main-title-icon">💪</span>
+            {skillsData.hardSkills.title}
+          </h3>
+          <p className="skills-main-description">{skillsData.hardSkills.description}</p>
+          
+          <div className="skills-categories">
+          {skillsData.hardSkills.categories.map((category) => (
+            <div 
+              key={category.id} 
+              className={`skill-category ${openCategories.includes(`hard-${category.id}`) ? 'open' : ''}`}
+            >
+              <button 
+                className="category-header"
+                onClick={() => toggleCategory(`hard-${category.id}`)}
+                aria-expanded={openCategories.includes(`hard-${category.id}`)}
+              >
+                <div className="category-header-content">
+                  <span className="category-icon">{category.icon}</span>
+                  <h4>{category.name}</h4>
                 </div>
-              ))}
+                <svg 
+                  className="category-chevron" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none"
+                >
+                  <path 
+                    d="M6 9L12 15L18 9" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              
+              <div className="skills-list-wrapper">
+                <div className="skills-list">
+                  {category.skills.map((skill, index) => (
+                    <div key={index} className="skill-item">
+                      <div className="skill-info">
+                        <span className="skill-name">{skill.name}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+
+      {/* Soft Skills Section */}
+      <div className="skills-main-section soft-skills-section">
+        <h3 className="skills-main-title">
+          <span className="main-title-icon">🌟</span>
+          {skillsData.softSkills.title}
+        </h3>
+        <p className="skills-main-description">{skillsData.softSkills.description}</p>
+        
+        <div className="soft-skills-grid">
+          {skillsData.softSkills.skills.map((skill) => (
+            <div key={skill.id} className="soft-skill-card">
+              <div className="soft-skill-header">
+                <span className="soft-skill-icon">{skill.icon}</span>
+                <h4>{skill.name}</h4>
+              </div>
+              <p className="soft-skill-description">{skill.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       </div>
     </section>
   );

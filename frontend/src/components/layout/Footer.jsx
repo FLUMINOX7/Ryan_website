@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; {currentYear} Ryan. Tous droits réservés.</p>
+        <p>&copy; {currentYear} MARIA PAUL Ryan. Tous droits réservés.</p>
         <div className="social-links">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
