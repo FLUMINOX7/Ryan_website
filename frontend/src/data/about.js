@@ -10,13 +10,12 @@ export const aboutData = {
     email: "ryanmariapaul7@gmail.com"
   },
 
-  journey: {
-    title: "Mon Parcours",
-    description: "Découvrez mon cheminement académique et professionnel dans le monde de l'informatique.",
-    timeline: [
+  education: {
+    title: "Formations",
+    description: "Mon parcours académique",
+    items: [
       {
         id: 1,
-        type: "education",
         title: "BUT Informatique (alternance)",
         institution: "Université Sorbonne Paris Nord - IUT de Villetaneuse",
         location: "Villetaneuse, France",
@@ -26,29 +25,33 @@ export const aboutData = {
       },
       {
         id: 2,
-        type: "education",
         title: "BAC Général - Mention Bien",
         institution: "Lycée privée l'Espérance",
         location: "France",
         period: "2020 - 2023",
         description: "Spécialité NSI (Numérique et Sciences Informatiques). Première véritable immersion dans le développement informatique. Projet de terminale : développement d'un jeu vidéo sur 2 mois (Hero Legacy), confirmant ma passion pour l'informatique et mon envie d'en faire mon métier.",
         current: false
-      },
+      }
+    ]
+  },
+
+  experience: {
+    title: "Expériences Professionnelles",
+    description: "Mon parcours professionnel",
+    items: [
       {
-        id: 3,
-        type: "experience",
+        id: 1,
         title: "Apprenti Développeur Informatique",
-        institution: "Allianz",
+        company: "Allianz",
         location: "France",
         period: "2024 - Aujourd'hui",
         description: "Développement d'un script permettant d'automatiser certaines étapes de traitements comptables. Maintenance et amélioration d'applications internes. Confrontation aux réalités du monde professionnel et utilisation d'outils et langages non abordés en cours.",
         current: true
       },
       {
-        id: 4,
-        type: "experience",
+        id: 2,
         title: "Stage de 3ème",
-        institution: "Pharmacie Pasteur",
+        company: "Pharmacie Pasteur",
         location: "France",
         period: "2020",
         description: "Rangement du stock et réapprovisionnement. Échanges avec les salariés pour découvrir leur métier et comprendre le fonctionnement de l'entreprise.",
