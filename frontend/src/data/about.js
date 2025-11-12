@@ -2,7 +2,7 @@
 
 export const aboutData = {
   intro: {
-    name: "Ryan Maria Paul",
+    name: "MARIA PAUL Ryan",
     title: "Étudiant en 3e année de BUT Informatique en alternance",
     description: "Passionné par l'informatique depuis mon plus jeune âge, j'ai découvert ce domaine grâce aux jeux vidéo, avant de m'intéresser à la création et aux mécanismes des logiciels. Aujourd'hui alternant en développement informatique chez Allianz, je combine apprentissage théorique et expérience professionnelle. Curieux et motivé, je m'investis dans la maîtrise de nouvelles technologies et dans le travail en équipe, avec pour ambition de contribuer à des projets innovants dans le secteur numérique.",
     image: "/assets/images/profile.jpg",
@@ -61,58 +61,101 @@ export const aboutData = {
   },
 
   skills: {
-    title: "Mes Compétences",
-    description: "Technologies et outils que je maîtrise à différents niveaux.",
-    categories: [
-      {
-        id: 1,
-        name: "Langages de Programmation",
-        icon: "💻",
-        skills: [
-          { name: "Python", level: 85 },
-          { name: "Java", level: 75 },
-          { name: "JavaScript", level: 80 },
-          { name: "VBA", level: 70 },
-          { name: "TypeScript", level: 65 }
-        ]
-      },
-      {
-        id: 2,
-        name: "Frontend & Design",
-        icon: "🎨",
-        skills: [
-          { name: "HTML/CSS", level: 85 },
-          { name: "React", level: 80 },
-          { name: "Next.js", level: 75 },
-          { name: "Vite", level: 80 },
-          { name: "Flutter", level: 70 }
-        ]
-      },
-      {
-        id: 3,
-        name: "Backend & Bases de données",
-        icon: "⚙️",
-        skills: [
-          { name: "FastAPI", level: 75 },
-          { name: "Django", level: 70 },
-          { name: "PostgreSQL", level: 80 },
-          { name: "SQL", level: 85 },
-          { name: "SQLAlchemy", level: 70 }
-        ]
-      },
-      {
-        id: 4,
-        name: "Outils & DevOps",
-        icon: "🛠️",
-        skills: [
-          { name: "Git/GitHub", level: 90 },
-          { name: "Visual Studio Code", level: 90 },
-          { name: "Docker", level: 70 },
-          { name: "GitHub Actions", level: 75 },
-          { name: "Pygame", level: 80 }
-        ]
-      }
-    ]
+    title: "Compétences",
+    description: "Mes compétences techniques et comportementales",
+    hardSkills: {
+      title: "Hard Skills",
+      description: "Compétences techniques",
+      categories: [
+        {
+          id: 1,
+          name: "Langages de Programmation",
+          icon: "💻",
+          skills: [
+            { name: "Python", level: 85 },
+            { name: "JavaScript", level: 80 },
+            { name: "Java", level: 75 },
+            { name: "TypeScript", level: 65 },
+            { name: "VBA", level: 70 },
+            { name: "SQL", level: 85 },
+            { name: "HTML/CSS", level: 85 }
+          ]
+        },
+        {
+          id: 2,
+          name: "Frameworks & Bibliothèques",
+          icon: "⚛️",
+          skills: [
+            { name: "React", level: 80 },
+            { name: "Next.js", level: 75 },
+            { name: "Vite", level: 80 },
+            { name: "FastAPI", level: 75 },
+            { name: "Django", level: 70 },
+            { name: "Flutter", level: 70 }
+          ]
+        },
+        {
+          id: 3,
+          name: "Outils de Développement",
+          icon: "🛠️",
+          skills: [
+            { name: "Git/GitHub", level: 90 },
+            { name: "Visual Studio Code", level: 90 },
+            { name: "Docker", level: 70 },
+            { name: "GitHub Actions", level: 75 },
+            { name: "PostgreSQL", level: 80 }
+          ]
+        }
+      ]
+    },
+    softSkills: {
+      title: "Soft Skills",
+      description: "Compétences comportementales",
+      skills: [
+        {
+          id: 1,
+          name: "Travail en équipe",
+          icon: "🤝",
+          description: "Collaboration efficace sur des projets en équipe, SAE et alternance",
+          level: 85
+        },
+        {
+          id: 2,
+          name: "Résolution de problèmes",
+          icon: "🧩",
+          description: "Analyse et résolution méthodique de problèmes complexes",
+          level: 80
+        },
+        {
+          id: 3,
+          name: "Autonomie",
+          icon: "🎯",
+          description: "Capacité à mener des projets de manière autonome",
+          level: 85
+        },
+        {
+          id: 4,
+          name: "Adaptabilité",
+          icon: "🔄",
+          description: "Apprentissage rapide de nouvelles technologies et méthodologies",
+          level: 80
+        },
+        {
+          id: 5,
+          name: "Communication",
+          icon: "💬",
+          description: "Communication claire des idées techniques et non-techniques",
+          level: 75
+        },
+        {
+          id: 6,
+          name: "Curiosité",
+          icon: "🔍",
+          description: "Veille technologique et apprentissage continu",
+          level: 90
+        }
+      ]
+    }
   },
 
   motivation: {

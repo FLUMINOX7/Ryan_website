@@ -410,21 +410,24 @@
   background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
   border-radius: 20px;
   color: white;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
 }
 
 .cta-section h2 {
   font-size: 2.25rem;
   color: white;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .cta-section p {
   font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
 }
 
 .cta-button-large {
@@ -439,12 +442,14 @@
   font-weight: 700;
   font-size: 1.1rem;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button-large:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   gap: 1rem;
+  background-color: #f8f8f8;
 }
 
 /* Responsive */

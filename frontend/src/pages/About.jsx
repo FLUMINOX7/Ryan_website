@@ -51,11 +51,11 @@ const About = () => {
             </div>
             
             <div className="hero-cta">
-              <Link to="/contact" className="cta-button primary">
-                Me contacter
-              </Link>
-              <Link to="/projects" className="cta-button secondary">
+              <Link to="/projects" className="cta-button primary">
                 Voir mes projets
+              </Link>
+              <Link to="/passions" className="cta-button secondary">
+                Découvrir mes passions
               </Link>
             </div>
           </div>
