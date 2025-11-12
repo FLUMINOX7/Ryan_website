@@ -21,7 +21,6 @@ const PassionItem = ({ passion, index }) => {
         <div className="passion-main-info">
           <div className="passion-title-row">
             <h3 className="passion-title">{passion.title}</h3>
-            <span className="passion-year">Depuis {passion.startedYear}</span>
           </div>
           <p className="passion-short-desc">{passion.shortDescription}</p>
         </div>
@@ -52,6 +51,22 @@ const PassionItem = ({ passion, index }) => {
           <div className="passion-description">
             <h4>À propos</h4>
             <p>{passion.fullDescription}</p>
+            
+            {passion.links && passion.links.length > 0 && (
+              <div className="passion-links">
+                {passion.links.map((link, idx) => (
+                  <a 
+                    key={idx} 
+                    href={link.url} 
+                    target={link.url.startsWith('http') ? '_blank' : '_self'}
+                    rel={link.url.startsWith('http') ? 'noopener noreferrer' : ''}
+                    className="passion-link"
+                  >
+                    {link.text} →
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
           
           <div className="passion-skills">
