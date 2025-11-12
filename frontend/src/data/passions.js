@@ -18,7 +18,7 @@ export const passions = [
     color: '#10b981',
     skills: ['Analyse de gameplay', 'Game Design', 'Appréciation esthétique', 'Pensée systémique'],
     links: [
-      { text: 'Découvrir mon premier jeu vidéo', url: '/projets/premier-jeu-video' }
+      { text: 'Découvrir mon premier jeu vidéo', url: '/projects/2' }
     ]
   },
   {
