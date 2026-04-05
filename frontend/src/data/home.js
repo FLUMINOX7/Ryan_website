@@ -4,8 +4,8 @@ export const homeData = {
   hero: {
     greeting: "Bonjour, je suis",
     name: "Ryan",
-    tagline: "Développeur Full Stack & Créateur d'Expériences Web",
-    description: "Étudiant passionné qui transforme des idées en applications web modernes et performantes. Toujours prêt à relever de nouveaux défis technologiques.",
+    tagline: "Étudiant en BUT Informatique & Apprenti Développeur",
+    description: "Passionné par l'informatique depuis mon plus jeune âge, j'ai découvert ce domaine grâce aux jeux vidéo avant de m'intéresser à la création et aux mécanismes des logiciels. Aujourd'hui alternant en développement informatique chez Allianz, je combine apprentissage théorique et expérience professionnelle.",
     cta: {
       primary: {
         text: "Découvrir mes projets",
@@ -20,63 +20,57 @@ export const homeData = {
 
   about: {
     title: "À Propos",
-    description: "Étudiant en informatique passionné par le développement web et les nouvelles technologies. Je crée des solutions numériques innovantes en combinant créativité et expertise technique.",
+    description: "Étudiant en 3ème année de BUT Informatique à l'Université Sorbonne Paris Nord, actuellement en alternance chez Allianz. Curieux et motivé, je m'investis dans la maîtrise de nouvelles technologies et dans le travail en équipe, avec pour ambition de contribuer à des projets innovants dans le secteur numérique.",
     image: "/assets/images/profile.jpg",
     stats: [
       {
-        value: "3+",
-        label: "Ans d'expérience"
+        value: "1+",
+        label: "An d'alternance"
       },
       {
-        value: "10+",
-        label: "Projets réalisés"
+        value: "5+",
+        label: "Projets personnels"
       },
       {
-        value: "15+",
-        label: "Technologies maîtrisées"
+        value: "18+",
+        label: "Technologies"
       }
     ]
   },
 
   keySkills: {
     title: "Compétences Principales",
-    description: "Les technologies que j'utilise au quotidien pour créer des solutions web performantes.",
+    description: "Les technologies que j'utilise pour développer des solutions performantes.",
     skills: [
       {
-        name: "React",
-        icon: "⚛️",
-        description: "Développement d'interfaces modernes et réactives",
-        level: 80
+        name: "Python",
+        icon: "🐍",
+        description: "Scripts, automatisation et développement backend"
       },
       {
         name: "JavaScript",
         icon: "🟨",
-        description: "Programmation front-end et back-end",
-        level: 85
+        description: "Développement web front-end et back-end"
       },
       {
-        name: "Node.js",
-        icon: "🟢",
-        description: "Création d'APIs et services backend",
-        level: 75
+        name: "React",
+        icon: "⚛️",
+        description: "Création d'interfaces utilisateur modernes"
       },
       {
-        name: "Python",
-        icon: "🐍",
-        description: "Scripts, IA et développement backend",
-        level: 80
-      },
-      {
-        name: "Git",
-        icon: "📦",
-        description: "Gestion de version et collaboration",
-        level: 85
+        name: "Java",
+        icon: "☕",
+        description: "Programmation orientée objet et applications"
       },
       {
         name: "SQL",
         icon: "🗄️",
-        description: "Bases de données relationnelles",
-        level: 75
+        description: "Bases de données et requêtes complexes"
+      },
+      {
+        name: "Git",
+        icon: "📦",
+        description: "Gestion de version et collaboration"
       }
     ]
   },
@@ -85,24 +79,24 @@ export const homeData = {
     title: "Pourquoi Travailler Avec Moi ?",
     items: [
       {
-        icon: "💡",
-        title: "Créatif & Innovant",
-        description: "J'apporte des solutions originales et des idées fraîches à chaque projet"
+        icon: "🎮",
+        title: "Passion depuis l'enfance",
+        description: "Une vraie passion pour l'informatique née des jeux vidéo et concrétisée par la création"
       },
       {
-        icon: "🚀",
-        title: "Technologies Modernes",
-        description: "J'utilise les frameworks et outils les plus récents de l'industrie"
+        icon: "🔍",
+        title: "Curiosité naturelle",
+        description: "Toujours chercher à comprendre les mécanismes et améliorer mes compétences"
       },
       {
-        icon: "🎯",
-        title: "Orienté Résultats",
-        description: "Je me concentre sur la livraison de solutions qui répondent aux besoins"
+        icon: "🤝",
+        title: "Esprit d'équipe",
+        description: "Collaboration efficace sur des projets universitaires et professionnels"
       },
       {
         icon: "📈",
-        title: "Apprentissage Continu",
-        description: "Je me tiens constamment à jour avec les dernières tendances tech"
+        title: "Apprentissage continu",
+        description: "Veille technologique constante et adaptation aux nouvelles technologies"
       }
     ]
   }
