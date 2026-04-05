@@ -24,11 +24,11 @@ export const homeData = {
     image: "/assets/images/profile.jpg",
     stats: [
       {
-        value: "1+",
-        label: "An d'alternance"
+        value: "2",
+        label: "Ans d'alternance"
       },
       {
-        value: "5+",
+        value: "6+",
         label: "Projets personnels"
       },
       {

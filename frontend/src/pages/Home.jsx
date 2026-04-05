@@ -8,11 +8,10 @@ import './Home.css';
 const Home = () => {
   useDocumentTitle('Accueil');
 
-  // Get featured projects (most recent ones with status 'terminé')
-  const featuredProjects = projects
-    .filter(p => p.status === 'terminé')
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 3);
+  const featuredProjectIds = [7, 6, 1];
+  const featuredProjects = featuredProjectIds
+    .map((projectId) => projects.find((project) => project.id === projectId))
+    .filter(Boolean);
 
   return (
     <div className="home">
@@ -69,9 +68,6 @@ const Home = () => {
                 src={homeData.about.image} 
                 alt="Ryan"
                 className="about-image"
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/400/7c3aed/ffffff?text=Ryan';
-                }}
               />
               <div className="about-image-bg"></div>
             </div>
@@ -148,15 +144,14 @@ const Home = () => {
                   to={`/projects/${project.id}`} 
                   className="project-card-home"
                 >
-                  <div className="project-image-home">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x250/7c3aed/ffffff?text=' + encodeURIComponent(project.title);
-                      }}
-                    />
-                  </div>
+                  {(project.coverImage || project.image) && (
+                    <div className="project-image-home">
+                      <img 
+                        src={project.coverImage || project.image}
+                        alt={project.title}
+                      />
+                    </div>
+                  )}
                   <div className="project-content-home">
                     <h3>{project.title}</h3>
                     <p>{project.shortDescription}</p>

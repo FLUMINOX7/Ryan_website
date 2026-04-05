@@ -8,7 +8,9 @@ export const projects = [
     technologies: ['Django', 'Python', 'Next.js', 'React', 'TypeScript', 'Flutter', 'Dart', 'PostgreSQL', 'Docker', 'API REST', 'GitHub Actions', 'Tailwind CSS'],
     github: 'https://github.com/NoWauu/V-lib',
     demo: null,
-    image: '/assets/images/vlib-project.jpg',
+    image: '/assets/images/vlib_cover.png',
+    coverImage: '/assets/images/vlib_cover.png',
+    detailImages: ['/assets/images/vlib_detail1.webp', '/assets/images/vlib_detail2.webp'],
     date: '2024-05-15',
     status: 'terminé'
   },
@@ -20,7 +22,9 @@ export const projects = [
     technologies: ['Python', 'Pygame', 'Pytmx', 'Pyscroll'],
     github: 'https://github.com/FLUMINOX7/Hero_Legacy',
     demo: null,
-    image: '/assets/images/hero-legacy.jpg',
+    image: '/assets/images/hero_legacy_cover.png',
+    coverImage: '/assets/images/hero_legacy_cover.png',
+    detailImages: ['/assets/images/hero_legacy_detail1.png', '/assets/images/hero_legacy_detail2.png'],
     date: '2022-06-15',
     status: 'terminé'
   },
@@ -31,8 +35,10 @@ export const projects = [
     fullDescription: 'Ce projet représente mon tout premier site web, développé en classe de Première au lycée. Il s\'agit d\'un site dédié à l\'univers Yu-Gi-Oh!, présentant les différentes séries de l\'anime (ZEXAL, ARC-V, VRAINS, SEVENS) avec leurs personnages principaux. Le site contient plusieurs pages interactives avec des effets au survol de la souris, des changements d\'images dynamiques, et des animations CSS. Ce projet fondateur m\'a permis de découvrir les bases du développement web et a été le point de départ de ma passion pour la programmation. Chaque page est dédiée à une série différente avec des informations détaillées sur les protagonistes et leurs cartes emblématiques.',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     github: 'https://github.com/FLUMINOX7/YGO',
-    demo: null,
-    image: '/assets/images/ygo-project.jpg',
+    demo: 'https://fluminox7.github.io/YGO/',
+    image: '/assets/images/ygo_cover.png',
+    coverImage: '/assets/images/ygo_cover.png',
+    detailImage: '/assets/images/ygo_detail.png',
     date: '2020-06-15',
     status: 'terminé'
   },
@@ -44,8 +50,49 @@ export const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Once UI", "MDX", "Vercel", "Open Source"],
     github: "https://github.com/FLUMINOX7/portfolio",
     demo: "https://portfolio-six-orcin-77.vercel.app/",
-    image: "/images/portfolio-magic.jpg",
+    image: '/assets/images/portfolio_magic.svg',
+    coverImage: '/assets/images/portfolio_magic_detail.png',
+    detailImage: '/assets/images/portfolio_magic_detail.png',
     date: "2025-07-15",
+    status: "terminé"
+  },
+  {
+    id: 6,
+    title: "EcomNova - Plateforme E-commerce Complète",
+    shortDescription: "Site e-commerce full-stack développé avec les meilleures pratiques de qualité logicielle",
+    fullDescription: "EcomNova est un projet e-commerce complet développé en 3ème année de BUT Informatique dans le cadre du cours de Qualité et Développement logiciel. Ce projet se distingue par l'application rigoureuse de toutes les méthodologies professionnelles de développement de qualité.\n\nLe projet est parti d'un code de base très léger fourni par l'enseignant, que j'ai dû compléter et transformer en une application e-commerce complète et fonctionnelle. L'application comprend un backend robuste développé avec FastAPI et PostgreSQL, et un frontend moderne créé avec React 19 et Vite 7. Le système offre toutes les fonctionnalités d'une plateforme e-commerce : authentification JWT sécurisée, catalogue de produits avec recherche avancée et filtres, gestion de panier dynamique en temps réel, système de commandes complet, interface d'administration pour la gestion des produits et des commandes, et statistiques en temps réel.\n\nCe qui rend ce projet particulièrement formateur, c'est l'accent mis sur la qualité du développement et les bonnes pratiques professionnelles. Le projet suit le cycle en V avec une documentation complète comprenant cahier des charges, spécifications fonctionnelles générales (SFG), spécifications fonctionnelles détaillées (SFD), et spécifications techniques (ST). Le développement a été réalisé en utilisant Git de manière professionnelle : une branche par fonctionnalité, messages de commit conventionnels et descriptifs, pull requests systématiques avec revue de code avant fusion, et GitFlow pour la gestion des branches.\n\nL'intégration continue et le déploiement continu (CI/CD) ont été mis en place avec GitHub Actions : tests automatiques sur Python 3.11 et 3.12, analyse de qualité du code avec ruff, black et isort, vérification à chaque push et pull request, et badges de statut en temps réel. Le projet inclut une suite de tests complète couvrant les fonctionnalités critiques avec pytest pour le backend et Vitest pour le frontend. La gestion de projet a été organisée avec un tableau GitHub Projects pour le suivi des tâches et la planification des sprints.\n\nL'architecture technique suit une structure moderne et modulaire : architecture en couches (Domain, Repository, Service, API), séparation claire des responsabilités, utilisation de Docker Compose pour l'orchestration, API REST complète avec documentation Swagger interactive, et validation stricte des données avec Pydantic. Le frontend implémente un design moderne avec glassmorphism et animations CSS, une navigation fluide avec React Router 7, et une gestion d'état avec Context API.\n\nCe projet m'a permis de comprendre l'importance de la qualité logicielle dans le développement professionnel : documentation technique rigoureuse, tests automatisés et couverture de code, intégration continue et déploiement automatisé, revue de code et collaboration en équipe, respect des standards et conventions, et maintenabilité à long terme. L'expérience acquise sur EcomNova reflète les attentes du monde professionnel et constitue une base solide pour ma future carrière de développeur.",
+    technologies: ["FastAPI", "Python", "React", "Vite", "PostgreSQL", "SQLAlchemy", "Docker", "GitHub Actions", "JWT", "Pydantic", "pytest", "Vitest"],
+    github: "https://github.com/FLUMINOX7/EcomNova_qualite_dev",
+    demo: null,
+    image: '/assets/images/ecomnova_project.svg',
+    coverImage: '/assets/images/ecomnova_detail1.png',
+    detailImages: [
+      '/assets/images/ecomnova_detail1.png',
+      '/assets/images/ecomnova_detail2.png',
+      '/assets/images/ecomnova_detail3.png',
+      '/assets/images/ecomnova_detail4.png',
+      '/assets/images/ecomnova_detail5.png'
+    ],
+    date: "2025-11-05",
+    status: "terminé"
+  },
+  {
+    id: 7,
+    title: "Kao AI - Analyse Faciale IA",
+    shortDescription: "Application Android et pipeline IA pour prédire âge, genre et ethnicité à partir d'un visage",
+    fullDescription: "Kao AI est un projet de BUT3 que je viens de finaliser, conçu comme une chaîne IA complète allant du traitement de données jusqu'au déploiement mobile. Le projet s'appuie sur le dataset UTKFace pour entraîner des modèles capables de prédire l'âge (régression), le genre (classification) et l'ethnicité (classification) à partir d'images de visages.\n\nL'architecture est organisée en deux volets complémentaires : une application Android en Kotlin pour l'inférence sur mobile, et un backend Python pour la préparation des données, l'entraînement, l'évaluation et l'export des modèles. Les modèles sont convertis en TensorFlow Lite pour être intégrés dans l'application mobile.\n\nCe projet m'a permis de consolider des compétences en machine learning appliqué, en déploiement embarqué, et en développement mobile, tout en travaillant avec une structure de projet claire incluant code, notebooks et livrables de soutenance.",
+    technologies: ["Python", "TensorFlow", "Keras", "Jupyter Notebook", "Kotlin", "Android", "TensorFlow Lite", "Firebase", "Gradle"],
+    github: "https://github.com/FLUMINOX7/SAE_AI",
+    demo: null,
+    image: '/assets/images/kaoai_detail1.webp',
+    coverImage: '/assets/images/kaoai_cover.png',
+    detailImages: [
+      '/assets/images/kaoai_detail1.webp',
+      '/assets/images/kaoai_detail2.webp',
+      '/assets/images/kaoai_detail3.webp',
+      '/assets/images/kaoai_detail4.webp'
+    ],
+    date: "2026-04-05",
     status: "terminé"
   },
   {
@@ -56,21 +103,22 @@ export const projects = [
     technologies: ["React", "Vite", "React Router", "EmailJS", "CSS3"],
     github: "https://github.com/FLUMINOX7/Ryan_website",
     demo: null,
-    image: "/images/portfolio.jpg",
+    image: '/assets/images/portfolio_personnel.svg',
+    coverImage: '/assets/images/portfolio_detail.png',
+    detailImage: '/assets/images/portfolio_detail.png',
     date: "2025-11-10",
     status: "en-cours"
   },
   {
-    id: 6,
-    title: "EcomNova - Plateforme E-commerce Complète",
-    shortDescription: "Site e-commerce full-stack développé avec les meilleures pratiques de qualité logicielle",
-    fullDescription: "EcomNova est un projet e-commerce complet développé en 3ème année de BUT Informatique dans le cadre du cours de Qualité et Développement logiciel. Ce projet se distingue par l'application rigoureuse de toutes les méthodologies professionnelles de développement de qualité.\n\nLe projet est parti d'un code de base très léger fourni par l'enseignant, que j'ai dû compléter et transformer en une application e-commerce complète et fonctionnelle. L'application comprend un backend robuste développé avec FastAPI et PostgreSQL, et un frontend moderne créé avec React 19 et Vite 7. Le système offre toutes les fonctionnalités d'une plateforme e-commerce : authentification JWT sécurisée, catalogue de produits avec recherche avancée et filtres, gestion de panier dynamique en temps réel, système de commandes complet, interface d'administration pour la gestion des produits et des commandes, et statistiques en temps réel.\n\nCe qui rend ce projet particulièrement formateur, c'est l'accent mis sur la qualité du développement et les bonnes pratiques professionnelles. Le projet suit le cycle en V avec une documentation complète comprenant cahier des charges, spécifications fonctionnelles générales (SFG), spécifications fonctionnelles détaillées (SFD), et spécifications techniques (ST). Le développement a été réalisé en utilisant Git de manière professionnelle : une branche par fonctionnalité, messages de commit conventionnels et descriptifs, pull requests systématiques avec revue de code avant fusion, et GitFlow pour la gestion des branches.\n\nL'intégration continue et le déploiement continu (CI/CD) ont été mis en place avec GitHub Actions : tests automatiques sur Python 3.11 et 3.12, analyse de qualité du code avec ruff, black et isort, vérification à chaque push et pull request, et badges de statut en temps réel. Le projet inclut une suite de tests complète couvrant les fonctionnalités critiques avec pytest pour le backend et Vitest pour le frontend. La gestion de projet a été organisée avec un tableau GitHub Projects pour le suivi des tâches et la planification des sprints.\n\nL'architecture technique suit une structure moderne et modulaire : architecture en couches (Domain, Repository, Service, API), séparation claire des responsabilités, utilisation de Docker Compose pour l'orchestration, API REST complète avec documentation Swagger interactive, et validation stricte des données avec Pydantic. Le frontend implémente un design moderne avec glassmorphism et animations CSS, une navigation fluide avec React Router 7, et une gestion d'état avec Context API.\n\nCe projet m'a permis de comprendre l'importance de la qualité logicielle dans le développement professionnel : documentation technique rigoureuse, tests automatisés et couverture de code, intégration continue et déploiement automatisé, revue de code et collaboration en équipe, respect des standards et conventions, et maintenabilité à long terme. L'expérience acquise sur EcomNova reflète les attentes du monde professionnel et constitue une base solide pour ma future carrière de développeur.",
-    technologies: ["FastAPI", "Python", "React", "Vite", "PostgreSQL", "SQLAlchemy", "Docker", "GitHub Actions", "JWT", "Pydantic", "pytest", "Vitest"],
-    github: "https://github.com/FLUMINOX7/EcomNova_qualite_dev",
+    id: 8,
+    title: "OtoRank - Application de Musique",
+    shortDescription: "Application musicale Flutter multi-plateforme construite avec une Clean Architecture",
+    fullDescription: "OtoRank est une application de musique en cours de développement, conçue avec Flutter pour cibler Android, iOS et le Web. Le projet est structuré avec une Clean Architecture et une organisation Feature-First afin de garantir une base de code maintenable, testable et évolutive.\n\nL'architecture sépare clairement les couches Presentation, Domain et Data, avec des patterns comme Repository et l'injection de dépendances via GetIt. La gestion d'état est portée par BLoC, et le projet intègre des briques utiles pour une app musicale moderne : lecture audio, gestion des permissions, sélection de fichiers, stockage local, et tests automatisés.\n\nLe dépôt contient également une documentation technique détaillée (architecture, conventions, workflow Git/commits) qui reflète une approche professionnelle du développement logiciel.",
+    technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "GetIt", "Dartz", "Equatable", "Hive", "Shared Preferences", "just_audio", "audio_service", "permission_handler", "file_picker"],
+    github: "https://github.com/FLUMINOX7/OtoRank",
     demo: null,
-    image: "/images/ecomnova-project.jpg",
-    date: "2025-11-05",
-    status: "terminé"
+    date: "2026-04-05",
+    status: "en-cours"
   }
 ];
 
