@@ -31,9 +31,6 @@ const About = () => {
               src={aboutData.intro.image} 
               alt={aboutData.intro.name}
               className="hero-image"
-              onError={(e) => {
-                e.target.src = 'https://via.placeholder.com/400/7c3aed/ffffff?text=' + encodeURIComponent(aboutData.intro.name);
-              }}
             />
             <div className="hero-image-decoration"></div>
           </div>

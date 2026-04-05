@@ -9,6 +9,24 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   
   const project = projects.find(p => p.id === parseInt(id));
+  const galleryImages = (
+    project?.detailImages && project.detailImages.length > 0
+      ? project.detailImages
+      : [project?.detailImage || project?.coverImage || project?.image]
+  ).filter(Boolean);
+  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    setCurrentImageIndex(0);
+  }, [id]);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  const currentImage = galleryImages[currentImageIndex];
+  const hasPreviousImage = currentImageIndex > 0;
+  const hasNextImage = currentImageIndex < galleryImages.length - 1;
   
   useDocumentTitle(project ? project.title : 'Projet introuvable');
 
@@ -63,13 +81,46 @@ const ProjectDetail = () => {
         </div>
 
         <div className="project-detail-image">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/1200x600/7c3aed/ffffff?text=' + encodeURIComponent(project.title);
-            }}
-          />
+          {galleryImages.length > 0 && currentImage && (
+            <>
+              {hasPreviousImage && (
+                <button
+                  type="button"
+                  className="image-nav-button image-nav-left"
+                  aria-label="Image précédente"
+                  onClick={() => setCurrentImageIndex((prev) => prev - 1)}
+                >
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              )}
+
+              <img 
+                src={currentImage}
+                alt={galleryImages.length > 1 ? `${project.title} - image ${currentImageIndex + 1}` : project.title}
+              />
+
+              {hasNextImage && (
+                <button
+                  type="button"
+                  className="image-nav-button image-nav-right"
+                  aria-label="Image suivante"
+                  onClick={() => setCurrentImageIndex((prev) => prev + 1)}
+                >
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              )}
+
+              {galleryImages.length > 1 && (
+                <div className="image-index-indicator">
+                  {currentImageIndex + 1} / {galleryImages.length}
+                </div>
+              )}
+            </>
+          )}
         </div>
 
         <div className="project-detail-content">

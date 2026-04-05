@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
+  const projectCover = project.coverImage || project.image;
+
   const getStatusLabel = (status) => {
     return status === 'terminé' ? 'Terminé' : 'En cours';
   };
@@ -14,14 +16,13 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <div className="project-image-container">
-        <img 
-          src={project.image} 
-          alt={project.title}
-          className="project-image"
-          onError={(e) => {
-            e.target.src = 'https://via.placeholder.com/400x250/7c3aed/ffffff?text=' + encodeURIComponent(project.title);
-          }}
-        />
+        {projectCover && (
+          <img 
+            src={projectCover}
+            alt={project.title}
+            className="project-image"
+          />
+        )}
         <span className={`status-badge ${getStatusClass(project.status)}`}>
           {getStatusLabel(project.status)}
         </span>
