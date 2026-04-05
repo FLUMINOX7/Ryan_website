@@ -1,44 +1,64 @@
 # Ryan Website - Portfolio Personnel
 
-Portfolio professionnel présentant mon parcours, mes passions et mes projets informatiques.
+Portfolio personnel présentant mon parcours, mes passions et mes projets informatiques.
 
 ## 📁 Structure du projet
 
 ```
 Ryan_website/
-├── frontend/          # Application React (Vite)
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── data/
-│   │   └── styles/
-│   └── package.json
-├── backend/           # (À venir) API et services backend
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── data/
+│   ├── hooks/
+│   └── styles/
+├── public/
+│   └── assets/
+├── index.html
+├── package.json
+├── vite.config.js
 └── README.md
 ```
 
 ## 🚀 Technologies
 
-### Frontend
-- React 18
+- React 19
 - Vite
+- React Router
 - CSS3
-
-### Backend (prévu)
-- Node.js / Express
-- Base de données (à définir)
+- EmailJS
 
 ## 🛠️ Installation et développement
 
-### Frontend
-
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173`
+Le site sera accessible sur `http://localhost:5173`.
+
+### Build local
+
+```bash
+npm run build
+npm run preview
+```
+
+## ☁️ Déploiement
+
+### Vercel
+
+Configuration recommandée :
+
+- Root Directory: `.`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+Le site est ensuite déployé automatiquement à chaque push sur la branche connectée à Vercel.
+
+### GitHub Pages
+
+Possible aussi, mais moins pratique pour une SPA React/Vite avec routing client.
 
 ## 🌿 Workflow Git
 
@@ -56,11 +76,10 @@ Le site sera accessible sur `http://localhost:5173`
 ### Convention de commits
 Format : `type(scope): description`
 
-**Exemples :**
-- `feat(about): add professional journey section`
-- `feat(projects): create project card component`
-- `style(navbar): improve mobile responsiveness`
-- `fix(footer): correct social links alignment`
+Exemples :
+- `feat(projects): add project gallery`
+- `fix(footer): update social links`
+- `docs(readme): update deployment instructions`
 
 ## 📝 Sections du site
 
@@ -72,4 +91,4 @@ Format : `type(scope): description`
 
 ## 📄 Licence
 
-© 2025 Ryan. Tous droits réservés.
+© 2026 Ryan. Tous droits réservés.
