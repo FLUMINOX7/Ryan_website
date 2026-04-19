@@ -27,9 +27,9 @@ export const aboutData = {
         id: 2,
         title: "BAC Général - Mention Bien",
         institution: "Lycée privée l'Espérance",
-        location: "France",
+        location: "Aulnay-sous-Bois, France",
         period: "2020 - 2023",
-        description: "Spécialité NSI (Numérique et Sciences Informatiques). Première véritable immersion dans le développement informatique. Projet de terminale : développement d'un jeu vidéo sur 2 mois (Hero Legacy), confirmant ma passion pour l'informatique et mon envie d'en faire mon métier.",
+        description: "Spécialité Mathématiques et NSI (Numérique et Sciences Informatiques). Première véritable immersion dans le développement informatique. Projet de terminale : développement d'un jeu vidéo sur 2 mois (Hero Legacy), confirmant ma passion pour l'informatique et mon envie d'en faire mon métier.",
         current: false
       }
     ]
@@ -43,7 +43,7 @@ export const aboutData = {
         id: 1,
         title: "Apprenti Développeur Informatique",
         company: "Allianz",
-        location: "France",
+        location: "Courbevoie, France",
         period: "2024 - Aujourd'hui",
         description: "Développement d'un script permettant d'automatiser certaines étapes de traitements comptables. Maintenance et amélioration d'applications internes. Confrontation aux réalités du monde professionnel et utilisation d'outils et langages non abordés en cours.",
         current: true
@@ -52,7 +52,7 @@ export const aboutData = {
         id: 2,
         title: "Stage de 3ème",
         company: "Pharmacie Pasteur",
-        location: "France",
+        location: "Tremblay-en-France, France",
         period: "2020",
         description: "Rangement du stock et réapprovisionnement. Échanges avec les salariés pour découvrir leur métier et comprendre le fonctionnement de l'entreprise.",
         current: false
