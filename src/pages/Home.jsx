@@ -1,9 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaJava } from 'react-icons/fa6';
+import {
+  SiGit,
+  SiJavascript,
+  SiPython,
+  SiPostgresql,
+  SiReact,
+} from 'react-icons/si';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import { homeData } from '../data/home';
 import { projects } from '../data/projects';
 import './Home.css';
+
+const skillIconMap = {
+  Python: { Icon: SiPython, color: '#3776AB' },
+  JavaScript: { Icon: SiJavascript, color: '#F7DF1E' },
+  React: { Icon: SiReact, color: '#61DAFB' },
+  Java: { Icon: FaJava, color: '#ED8B00' },
+  SQL: { Icon: SiPostgresql, color: '#4169E1' },
+  Git: { Icon: SiGit, color: '#F05032' },
+};
 
 const Home = () => {
   useDocumentTitle('Accueil');
@@ -47,9 +64,23 @@ const Home = () => {
           </div>
           
           <div className="hero-illustration">
-            <div className="floating-card card-1">💻</div>
-            <div className="floating-card card-2">🚀</div>
-            <div className="floating-card card-3">⚡</div>
+            <div className="code-block code-1">
+              <span className="code-line">def create_magic():</span>
+              <span className="code-line">  config = load()</span>
+              <span className="code-line">  return build(config)</span>
+            </div>
+            <div className="code-block code-2">
+              <span className="code-line">{"const App = () => {"}</span>
+              <span className="code-line">{"  const [state, set] = useState()"}</span>
+              <span className="code-line">{"  return <UI state={state} />"}</span>
+              <span className="code-line">{"}"}</span>
+            </div>
+            <div className="code-block code-3">
+              <span className="code-line">// Initialize project</span>
+              <span className="code-line">const start = async () => {"{}"}</span>
+              <span className="code-line">  await init()</span>
+              <span className="code-line">  launch()</span>
+            </div>
           </div>
         </div>
         
@@ -107,7 +138,16 @@ const Home = () => {
           <div className="skills-grid">
             {homeData.keySkills.skills.map((skill, index) => (
               <div key={index} className="skill-card">
-                <span className="skill-icon">{skill.icon}</span>
+                <span className="skill-icon">
+                  {skillIconMap[skill.name] ? (
+                    (() => {
+                      const { Icon, color } = skillIconMap[skill.name];
+                      return <Icon aria-hidden="true" style={{ color }} />;
+                    })()
+                  ) : (
+                    skill.icon
+                  )}
+                </span>
                 <h3>{skill.name}</h3>
                 <p>{skill.description}</p>
                 <div className="skill-bar-mini">

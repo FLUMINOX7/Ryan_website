@@ -40,6 +40,15 @@
 
 .main-title-icon {
   font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.main-title-icon svg {
+  width: 1em;
+  height: 1em;
 }
 
 .skills-main-description {
@@ -95,6 +104,23 @@
 
 .category-icon {
   font-size: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.category-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.category-icon-cluster {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.2rem 0.35rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .category-header h3 {
@@ -241,6 +267,15 @@
 
 .soft-skill-icon {
   font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.soft-skill-icon svg {
+  width: 1em;
+  height: 1em;
 }
 
 .soft-skill-header h4 {

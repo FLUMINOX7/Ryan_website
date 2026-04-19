@@ -1,5 +1,39 @@
 import React, { useState } from 'react';
+import { FaCode, FaGithub, FaJava, FaStar } from 'react-icons/fa6';
+import {
+  SiDjango,
+  SiDocker,
+  SiFlutter,
+  SiGit,
+  SiJavascript,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiTypescript,
+  SiVite,
+} from 'react-icons/si';
 import './SkillsSection.css';
+
+const categoryIcons = {
+  1: [
+    { Icon: SiPython, color: '#3776AB' },
+    { Icon: SiJavascript, color: '#F7DF1E' },
+    { Icon: FaJava, color: '#ED8B00' },
+    { Icon: SiTypescript, color: '#3178C6' },
+  ],
+  2: [
+    { Icon: SiReact, color: '#61DAFB' },
+    { Icon: SiVite, color: '#646CFF' },
+    { Icon: SiDjango, color: '#092E20' },
+    { Icon: SiFlutter, color: '#02569B' },
+  ],
+  3: [
+    { Icon: SiGit, color: '#F05032' },
+    { Icon: FaGithub, color: '#181717' },
+    { Icon: SiDocker, color: '#2496ED' },
+    { Icon: SiPostgresql, color: '#4169E1' },
+  ],
+};
 
 const SkillsSection = ({ skillsData }) => {
   const [openCategories, setOpenCategories] = useState([]);
@@ -21,7 +55,7 @@ const SkillsSection = ({ skillsData }) => {
         {/* Hard Skills Section */}
         <div className="skills-main-section hard-skills-section">
           <h3 className="skills-main-title">
-            <span className="main-title-icon">💪</span>
+            <span className="main-title-icon"><FaCode aria-hidden="true" /></span>
             {skillsData.hardSkills.title}
           </h3>
           <p className="skills-main-description">{skillsData.hardSkills.description}</p>
@@ -38,7 +72,13 @@ const SkillsSection = ({ skillsData }) => {
                 aria-expanded={openCategories.includes(`hard-${category.id}`)}
               >
                 <div className="category-header-content">
-                  <span className="category-icon">{category.icon}</span>
+                  <span className="category-icon">
+                    <span className="category-icon-cluster" aria-hidden="true">
+                      {categoryIcons[category.id]?.map(({ Icon, color }, index) => (
+                        <Icon key={index} style={{ color }} />
+                      ))}
+                    </span>
+                  </span>
                   <h4>{category.name}</h4>
                 </div>
                 <svg 
@@ -77,7 +117,7 @@ const SkillsSection = ({ skillsData }) => {
       {/* Soft Skills Section */}
       <div className="skills-main-section soft-skills-section">
         <h3 className="skills-main-title">
-          <span className="main-title-icon">🌟</span>
+          <span className="main-title-icon"><FaStar aria-hidden="true" /></span>
           {skillsData.softSkills.title}
         </h3>
         <p className="skills-main-description">{skillsData.softSkills.description}</p>
