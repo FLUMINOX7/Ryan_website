@@ -40,6 +40,15 @@
 
 .main-title-icon {
   font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.main-title-icon svg {
+  width: 1em;
+  height: 1em;
 }
 
 .skills-main-description {
@@ -95,6 +104,23 @@
 
 .category-icon {
   font-size: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.category-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.category-icon-cluster {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.2rem 0.35rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .category-header h3 {
@@ -132,30 +158,40 @@
 }
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.75rem;
+  row-gap: 0.75rem;
   padding: 0 1.5rem 1.5rem 1.5rem;
   border-top: 1px solid var(--border-color);
   padding-top: 1.5rem;
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.skill-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), #10b981);
 }
 
 .skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
 }
 
 .skill-name {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-primary);
+  line-height: 1.45;
 }
 
 .skill-percentage {
@@ -241,6 +277,15 @@
 
 .soft-skill-icon {
   font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.soft-skill-icon svg {
+  width: 1em;
+  height: 1em;
 }
 
 .soft-skill-header h4 {
@@ -295,6 +340,10 @@
     flex-direction: column;
     gap: 4rem;
   }
+
+  .skills-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   
   .soft-skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -308,6 +357,11 @@
   
   .soft-skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    row-gap: 0.9rem;
   }
   
   .skill-category {
