@@ -182,29 +182,7 @@ export const aboutData = {
 
   motivation: {
     title: "Pourquoi l'Informatique ?",
-    content: "Depuis mon plus jeune âge, l'informatique a occupé une place importante dans mon quotidien. Comme beaucoup, c'est par le biais des jeux vidéo que j'ai découvert cet univers. Mais très vite, ma curiosité naturelle m'a poussé à aller au-delà de l'utilisation et à comprendre les mécanismes qui se cachent derrière ces programmes interactifs. Ce goût pour la découverte s'est affirmé au fil des années et a orienté progressivement mes choix scolaires et professionnels. En classe de première, j'ai choisi la spécialité NSI, ce qui m'a offert une première véritable immersion dans le développement informatique. En terminale, le projet de jeu vidéo a été une révélation : j'ai pris plaisir à coder, résoudre des problèmes, tester, améliorer. Ce travail personnel a confirmé ma passion pour l'informatique et mon envie d'en faire mon métier.",
-    highlights: [
-      {
-        icon: "🎮",
-        title: "Découverte ludique",
-        description: "L'univers des jeux vidéo comme porte d'entrée"
-      },
-      {
-        icon: "�",
-        title: "Curiosité naturelle",
-        description: "Comprendre les mécanismes derrière les programmes"
-      },
-      {
-        icon: "🚀",
-        title: "Créativité technique",
-        description: "Créer des solutions de A à Z"
-      },
-      {
-        icon: "📈",
-        title: "Apprentissage continu",
-        description: "Toujours apprendre et relever de nouveaux défis"
-      }
-    ]
+    content: "L'informatique m'a toujours attiré parce qu'elle permet de transformer une idée en quelque chose de concret, utile et évolutif. J'ai commencé par m'intéresser aux jeux vidéo, puis très vite j'ai eu envie de comprendre comment les programmes étaient construits et comment les améliorer.\n\nAvec le BUT Informatique, j'ai découvert l'étendue du domaine: développement web, développement mobile, bases de données, plusieurs langages et méthodes de travail. Cette formation m'a permis de passer d'une vision assez large à une vraie compréhension des différents métiers et des différents usages de l'informatique.\n\nL'alternance a confirmé ma passion en me confrontant à des besoins réels. J'ai pu optimiser des processus et automatiser des tâches répétitives pour faire gagner du temps à d'autres équipes, ce qui m'a montré concrètement l'impact que peut avoir le développement dans une organisation.",
   },
 
   professionalGoals: {
@@ -212,19 +190,19 @@ export const aboutData = {
     shortTerm: {
       title: "Court & Moyen Terme",
       goals: [
-        "Obtenir le BUT Informatique et poursuivre en école d'ingénieur en alternance",
-        "Consolider mon expérience professionnelle chez Allianz",
-        "Affiner mon choix de spécialisation entre développement logiciel, cybersécurité et intelligence artificielle",
-        "Contribuer à des projets open-source et développer des projets personnels innovants"
+        "Terminer mon BUT Informatique en consolidant mes acquis techniques et méthodologiques",
+        "Approfondir mes compétences en data et en intelligence artificielle",
+        "Continuer à progresser chez Allianz en développant des outils utiles au quotidien",
+        "Poursuivre des projets personnels pour continuer à apprendre et à expérimenter"
       ]
     },
     longTerm: {
       title: "Long Terme",
       goals: [
-        "Occuper un poste à fort enjeu technique dans un environnement dynamique et stimulant",
-        "Me spécialiser dans un domaine porteur (développement logiciel, cybersécurité ou IA)",
-        "Continuer à apprendre et évoluer vers des fonctions à responsabilités",
-        "Participer à la création ou au développement d'une start-up dans le domaine du numérique"
+        "Obtenir mon titre d'ingénieur en poursuivant une spécialisation en data et IA",
+        "Contribuer à des projets significatifs qui ont un impact concret dans le futur",
+        "Évoluer vers un poste où je peux combiner logique, qualité de code et analyse des données",
+        "Continuer à apprendre dans un environnement technique exigeant et collaboratif"
       ]
     }
   },

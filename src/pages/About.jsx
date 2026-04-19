@@ -105,16 +105,6 @@ const About = () => {
           
           <div className="section-content">
             <p className="motivation-content">{aboutData.motivation.content}</p>
-            
-            <div className="motivation-highlights">
-              {aboutData.motivation.highlights.map((highlight, index) => (
-                <div key={index} className="highlight-card">
-                  <span className="highlight-icon">{highlight.icon}</span>
-                  <h3>{highlight.title}</h3>
-                  <p>{highlight.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -146,7 +136,6 @@ const About = () => {
             <div className="goals-grid">
               <div className="goals-card short-term">
                 <h3>
-                  <span className="goals-icon">🎯</span>
                   {aboutData.professionalGoals.shortTerm.title}
                 </h3>
                 <ul>
@@ -158,7 +147,6 @@ const About = () => {
               
               <div className="goals-card long-term">
                 <h3>
-                  <span className="goals-icon">🚀</span>
                   {aboutData.professionalGoals.longTerm.title}
                 </h3>
                 <ul>
