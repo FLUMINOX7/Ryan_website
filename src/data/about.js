@@ -20,7 +20,7 @@ export const aboutData = {
         institution: "Université Sorbonne Paris Nord - IUT de Villetaneuse",
         location: "Villetaneuse, France",
         period: "2023 - 2026",
-        description: "Formation complète orientée pratique, avec une montée en compétences progressive en développement logiciel, bases de données, réseaux, systèmes et gestion de projet.\n\nLes SAE m'ont permis de travailler sur des cas concrets en autonomie et en équipe: cadrer un besoin, concevoir une solution, développer, tester puis présenter le résultat de façon professionnelle.\n\nDepuis la 2e année, l'alternance renforce fortement cet apprentissage: application directe des notions vues en cours, appropriation des bonnes pratiques d'entreprise et amélioration continue de ma rigueur technique.",
+        description: "Formation complète orientée pratique, avec une montée en compétences progressive en développement logiciel, bases de données, réseaux, systèmes et gestion de projet.\n\nLes SAE (Situation d'Apprentissage et d'Évaluation) sont des projets universitaires qui nous permettent de mettre en pratique les notions vues en cours sur des cas concrets, en autonomie comme en équipe.\n\nÀ partir de la 2e année, j'ai également pu faire une alternance, ce qui m'a permis de découvrir le monde professionnel, d'appliquer mes connaissances dans un contexte réel et de renforcer ma rigueur technique au quotidien.",
         current: true
       },
       {
@@ -29,7 +29,7 @@ export const aboutData = {
         institution: "Lycée privée l'Espérance",
         location: "Aulnay-sous-Bois, France",
         period: "2020 - 2023",
-        description: "Spécialités Mathématiques et NSI (Numérique et Sciences Informatiques), avec une première immersion solide dans les fondamentaux de l'algorithmique et du développement.\n\nLe projet de terminale, Hero Legacy, réalisé sur deux mois, a marqué un vrai déclic: passer de l'idée à un projet concret, structuré et jouable a confirmé mon envie de faire de l'informatique mon métier.",
+        description: "Spécialités Mathématiques et NSI (Numérique et Sciences Informatiques), avec une première immersion solide dans les fondamentaux de l'algorithmique et du développement.\n\nLe projet de terminale consistait en la réalisation d'un jeu python en POO (Programmation Orientée Objet). Un fois le rendu effectué, j'ai continué à l'améliorer de mon côté, ce qui m'a permis d'aller plus loin dans sa conception et dans sa réalisation.\nCe projet a été le véritable déclic qui m'a donné envie de continuer dans l'informatique et de m'y investir sérieusement.",
         current: false
       }
     ]
@@ -44,8 +44,8 @@ export const aboutData = {
         title: "Apprenti Développeur Informatique",
         company: "Allianz",
         location: "Courbevoie, France",
-        period: "2024 - Aujourd'hui",
-        description: "Développement d'un script permettant d'automatiser certaines étapes de traitements comptables. Maintenance et amélioration d'applications internes. Confrontation aux réalités du monde professionnel et utilisation d'outils et langages non abordés en cours.",
+        period: "2024 - 2026",
+        description: "Je travaille au sein d'une direction comptable, dans un environnement Agile où la méthode SCRUM structure l'organisation du travail et le suivi des tâches.\n\n Mes principales missions consistent en :\n - Développement de programmes d'automatisation en Python et Batch pour optimiser des processus internes.\n - Maintenance et évolution d'outils comptables existants, notamment des macros VBA et des programmes SAS.\n - Collaboration avec plusieurs directions métier et intégration de leurs besoins dans des outils automatisés adaptés aux usages du service.",
         current: true
       },
       {
