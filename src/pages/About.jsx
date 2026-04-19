@@ -171,20 +171,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Values Section */}
-        <section className="values-section">
-          <h2>Mes Valeurs</h2>
-          <div className="values-grid">
-            {aboutData.values.map((value, index) => (
-              <div key={index} className="value-card">
-                <span className="value-icon">{value.icon}</span>
-                <h3>{value.title}</h3>
-                <p>{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="cta-section">
           <h2>Travaillons Ensemble</h2>

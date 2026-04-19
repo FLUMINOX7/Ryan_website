@@ -20,7 +20,7 @@ export const aboutData = {
         institution: "Université Sorbonne Paris Nord - IUT de Villetaneuse",
         location: "Villetaneuse, France",
         period: "2023 - 2026",
-        description: "Formation pratique en développement logiciel, bases de données, réseaux, systèmes et gestion de projet. SAE (projets universitaires en autonomie) permettant d'appliquer les connaissances théoriques sur des cas concrets. Alternance depuis la 2ème année pour consolider les acquis par la pratique professionnelle.",
+        description: "Formation complète orientée pratique, avec une montée en compétences progressive en développement logiciel, bases de données, réseaux, systèmes et gestion de projet.\n\nLes SAE m'ont permis de travailler sur des cas concrets en autonomie et en équipe: cadrer un besoin, concevoir une solution, développer, tester puis présenter le résultat de façon professionnelle.\n\nDepuis la 2e année, l'alternance renforce fortement cet apprentissage: application directe des notions vues en cours, appropriation des bonnes pratiques d'entreprise et amélioration continue de ma rigueur technique.",
         current: true
       },
       {
@@ -29,7 +29,7 @@ export const aboutData = {
         institution: "Lycée privée l'Espérance",
         location: "Aulnay-sous-Bois, France",
         period: "2020 - 2023",
-        description: "Spécialité Mathématiques et NSI (Numérique et Sciences Informatiques). Première véritable immersion dans le développement informatique. Projet de terminale : développement d'un jeu vidéo sur 2 mois (Hero Legacy), confirmant ma passion pour l'informatique et mon envie d'en faire mon métier.",
+        description: "Spécialités Mathématiques et NSI (Numérique et Sciences Informatiques), avec une première immersion solide dans les fondamentaux de l'algorithmique et du développement.\n\nLe projet de terminale, Hero Legacy, réalisé sur deux mois, a marqué un vrai déclic: passer de l'idée à un projet concret, structuré et jouable a confirmé mon envie de faire de l'informatique mon métier.",
         current: false
       }
     ]
@@ -207,26 +207,4 @@ export const aboutData = {
     }
   },
 
-  values: [
-    {
-      icon: "🤝",
-      title: "Travail en équipe",
-      description: "La collaboration mène à des solutions plus riches"
-    },
-    {
-      icon: "💪",
-      title: "Persévérance",
-      description: "Sortir de ma zone de confort pour progresser"
-    },
-    {
-      icon: "🎓",
-      title: "Apprentissage continu",
-      description: "Toujours chercher à maîtriser de nouvelles technologies"
-    },
-    {
-      icon: "✨",
-      title: "Qualité du code",
-      description: "Appliquer les bonnes pratiques et la rigueur professionnelle"
-    }
-  ]
 };
