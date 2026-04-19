@@ -6,6 +6,8 @@ import SkillsSection from '../components/about/SkillsSection';
 import { aboutData } from '../data/about';
 import './About.css';
 
+const CV_FILE_PATH = '/assets/documents/Ryan_MARIA_PAUL_CV.pdf';
+
 const About = () => {
   useDocumentTitle('À propos');
   
@@ -54,6 +56,14 @@ const About = () => {
               <Link to="/passions" className="cta-button secondary">
                 Découvrir mes passions
               </Link>
+              <a
+                href={CV_FILE_PATH}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button secondary"
+              >
+                Voir mon CV
+              </a>
             </div>
           </div>
         </div>
