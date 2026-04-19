@@ -6,6 +6,8 @@ import SkillsSection from '../components/about/SkillsSection';
 import { aboutData } from '../data/about';
 import './About.css';
 
+const CV_FILE_PATH = '/assets/documents/Ryan_MARIA_PAUL_CV.pdf';
+
 const About = () => {
   useDocumentTitle('À propos');
   
@@ -54,6 +56,14 @@ const About = () => {
               <Link to="/passions" className="cta-button secondary">
                 Découvrir mes passions
               </Link>
+              <a
+                href={CV_FILE_PATH}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button secondary"
+              >
+                Voir mon CV
+              </a>
             </div>
           </div>
         </div>
@@ -105,16 +115,6 @@ const About = () => {
           
           <div className="section-content">
             <p className="motivation-content">{aboutData.motivation.content}</p>
-            
-            <div className="motivation-highlights">
-              {aboutData.motivation.highlights.map((highlight, index) => (
-                <div key={index} className="highlight-card">
-                  <span className="highlight-icon">{highlight.icon}</span>
-                  <h3>{highlight.title}</h3>
-                  <p>{highlight.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -146,7 +146,6 @@ const About = () => {
             <div className="goals-grid">
               <div className="goals-card short-term">
                 <h3>
-                  <span className="goals-icon">🎯</span>
                   {aboutData.professionalGoals.shortTerm.title}
                 </h3>
                 <ul>
@@ -158,7 +157,6 @@ const About = () => {
               
               <div className="goals-card long-term">
                 <h3>
-                  <span className="goals-icon">🚀</span>
                   {aboutData.professionalGoals.longTerm.title}
                 </h3>
                 <ul>
@@ -168,20 +166,6 @@ const About = () => {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Values Section */}
-        <section className="values-section">
-          <h2>Mes Valeurs</h2>
-          <div className="values-grid">
-            {aboutData.values.map((value, index) => (
-              <div key={index} className="value-card">
-                <span className="value-icon">{value.icon}</span>
-                <h3>{value.title}</h3>
-                <p>{value.description}</p>
-              </div>
-            ))}
           </div>
         </section>
 
