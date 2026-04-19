@@ -1,37 +1,32 @@
 import React, { useState } from 'react';
-import { FaCode, FaGithub, FaJava, FaStar } from 'react-icons/fa6';
+import { FaArrowsRotate, FaCode, FaGithub, FaJava, FaMicrosoft, FaStar } from 'react-icons/fa6';
 import {
-  SiDjango,
   SiDocker,
   SiFlutter,
-  SiGit,
+  SiJira,
   SiJavascript,
-  SiPostgresql,
   SiPython,
   SiReact,
-  SiTypescript,
-  SiVite,
+  SiTrello
 } from 'react-icons/si';
 import './SkillsSection.css';
 
 const categoryIcons = {
   1: [
     { Icon: SiPython, color: '#3776AB' },
-    { Icon: SiJavascript, color: '#F7DF1E' },
-    { Icon: FaJava, color: '#ED8B00' },
-    { Icon: SiTypescript, color: '#3178C6' },
+    { Icon: SiJavascript, color: '#F7DF1E' }
   ],
   2: [
     { Icon: SiReact, color: '#61DAFB' },
-    { Icon: SiVite, color: '#646CFF' },
-    { Icon: SiDjango, color: '#092E20' },
-    { Icon: SiFlutter, color: '#02569B' },
+    { Icon: SiFlutter, color: '#02569B' }
   ],
   3: [
-    { Icon: SiGit, color: '#F05032' },
     { Icon: FaGithub, color: '#181717' },
-    { Icon: SiDocker, color: '#2496ED' },
-    { Icon: SiPostgresql, color: '#4169E1' },
+    { Icon: SiDocker, color: '#2496ED' }
+  ],
+  4: [
+    { Icon: SiJira, color: '#0052CC' },
+    { Icon: SiTrello, color: '#0052CC' }
   ],
 };
 

@@ -70,40 +70,62 @@ export const aboutData = {
         {
           id: 1,
           name: "Langages de Programmation",
-          icon: "💻",
           skills: [
             { name: "Python", level: 85 },
             { name: "JavaScript", level: 80 },
             { name: "Java", level: 75 },
             { name: "TypeScript", level: 65 },
+            { name: "PHP", level: 65 },
+            { name: "Kotlin", level: 60 },
             { name: "VBA", level: 70 },
             { name: "SQL", level: 85 },
+            { name: "Bash", level: 75 },
+            { name: "Batch", level: 80 },
             { name: "HTML/CSS", level: 85 }
           ]
         },
         {
           id: 2,
           name: "Frameworks & Bibliothèques",
-          icon: "⚛️",
           skills: [
             { name: "React", level: 80 },
             { name: "Next.js", level: 75 },
             { name: "Vite", level: 80 },
             { name: "FastAPI", level: 75 },
             { name: "Django", level: 70 },
-            { name: "Flutter", level: 70 }
+            { name: "Flutter", level: 70 },
+            { name: "Pandas", level: 80 },
+            { name: "PySpark", level: 65 },
+            { name: "TensorFlow", level: 60 },
+            { name: "Keras", level: 60 }
           ]
         },
         {
           id: 3,
-          name: "Outils de Développement",
-          icon: "🛠️",
+          name: "Environnements & Outils",
           skills: [
             { name: "Git/GitHub", level: 90 },
             { name: "Visual Studio Code", level: 90 },
             { name: "Docker", level: 70 },
             { name: "GitHub Actions", level: 75 },
-            { name: "PostgreSQL", level: 80 }
+            { name: "Jenkins", level: 75 },
+            { name: "PostgreSQL", level: 80 },
+            { name: "Android Studio", level: 70 },
+            { name: "Jupyter Notebook", level: 85 },
+            { name: "Linux", level: 75 }
+          ]
+        },
+        {
+          id: 4,
+          name: "Gestion de Projet & Méthodes",
+          skills: [
+            { name: "GitHub Projects", level: 85 },
+            { name: "Jira", level: 75 },
+            { name: "Microsoft Planner", level: 80 },
+            { name: "Trello", level: 85 },
+            { name: "Shortcut", level: 70 },
+            { name: "SCRUM", level: 80 },
+            { name: "Agile", level: 80 }
           ]
         }
       ]

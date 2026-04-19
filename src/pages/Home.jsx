@@ -77,7 +77,7 @@ const Home = () => {
             </div>
             <div className="code-block code-3">
               <span className="code-line">// Initialize project</span>
-              <span className="code-line">const start = async () => {"{}"}</span>
+              <span className="code-line">{"const start = async () => {}"}</span>
               <span className="code-line">  await init()</span>
               <span className="code-line">  launch()</span>
             </div>
