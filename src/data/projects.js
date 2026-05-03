@@ -92,7 +92,7 @@ export const projects = [
       '/assets/images/kaoai_detail3.webp',
       '/assets/images/kaoai_detail4.webp'
     ],
-    date: "2026-04-05",
+    date: "2026-03-04",
     status: "terminé"
   },
   {
@@ -113,11 +113,14 @@ export const projects = [
     id: 8,
     title: "OtoRank - Application de Musique",
     shortDescription: "Application musicale Flutter multi-plateforme construite avec une Clean Architecture",
-    fullDescription: "OtoRank est une application de musique en cours de développement, conçue avec Flutter pour cibler Android, iOS et le Web. Le projet est structuré avec une Clean Architecture et une organisation Feature-First afin de garantir une base de code maintenable, testable et évolutive.\n\nL'architecture sépare clairement les couches Presentation, Domain et Data, avec des patterns comme Repository et l'injection de dépendances via GetIt. La gestion d'état est portée par BLoC, et le projet intègre des briques utiles pour une app musicale moderne : lecture audio, gestion des permissions, sélection de fichiers, stockage local, et tests automatisés.\n\nLe dépôt contient également une documentation technique détaillée (architecture, conventions, workflow Git/commits) qui reflète une approche professionnelle du développement logiciel.",
-    technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "GetIt", "Dartz", "Equatable", "Hive", "Shared Preferences", "just_audio", "audio_service", "permission_handler", "file_picker"],
+    fullDescription: "OtoRank est une application mobile de musique multi-fonction qui vous permet de gérer et organiser votre bibliothèque musicale de façon simple et efficace.\n\nPrincipales fonctionnalités : télécharger directement depuis YouTube vos morceaux préférés dans le format audio de votre choix, éditer facilement le son et la longueur des musiques selon vos envies, classer vos propres playlists grâce au système de classement intégré, consulter les paroles des chansons et accéder à des traductions pour mieux comprendre vos morceaux préférés. L'interface est conçue pour être intuitive et rapide à prendre en main.\n\nTechniquement, l'application est développée avec Flutter pour fonctionner de façon fluide sur Android, iOS et Web, en utilisant une architecture moderne et maintenable.",
+    technologies: ["Flutter", "Dart"],
     github: "https://github.com/FLUMINOX7/OtoRank",
     demo: null,
-    date: "2026-04-05",
+    image: '/assets/images/otorank_detail.webp',
+    coverImage: '/assets/images/otorank_cover.webp',
+    detailImages: ['/assets/images/otorank_detail.webp'],
+    date: "2025-12-20",
     status: "en-cours"
   }
 ];
