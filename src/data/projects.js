@@ -80,8 +80,8 @@ export const projects = [
     id: 7,
     title: "Kao AI - Analyse Faciale IA",
     shortDescription: "Application Android et pipeline IA pour prédire âge, genre et ethnicité à partir d'un visage",
-    fullDescription: "Kao AI est un projet de BUT3 que je viens de finaliser, conçu comme une chaîne IA complète allant du traitement de données jusqu'au déploiement mobile. Le projet s'appuie sur le dataset UTKFace pour entraîner des modèles capables de prédire l'âge (régression), le genre (classification) et l'ethnicité (classification) à partir d'images de visages.\n\nL'architecture est organisée en deux volets complémentaires : une application Android en Kotlin pour l'inférence sur mobile, et un backend Python pour la préparation des données, l'entraînement, l'évaluation et l'export des modèles. Les modèles sont convertis en TensorFlow Lite pour être intégrés dans l'application mobile.\n\nCe projet m'a permis de consolider des compétences en machine learning appliqué, en déploiement embarqué, et en développement mobile, tout en travaillant avec une structure de projet claire incluant code, notebooks et livrables de soutenance.",
-    technologies: ["Python", "TensorFlow", "Keras", "Jupyter Notebook", "Kotlin", "Android", "TensorFlow Lite", "Firebase", "Gradle"],
+    fullDescription: "Kao AI est un projet de BUT3 conçu comme une chaîne IA complète, de la préparation des données jusqu'au déploiement sur Android. L'objectif est de prédire, à partir d'un visage, trois informations : l'âge (régression), le genre (classification) et l'ethnicité (classification). Le projet s'appuie sur le dataset UTKFace, dont les labels sont extraits automatiquement à partir des noms de fichiers.\n\nLa partie intelligence artificielle couvre tout le cycle de travail : préparation du dataset, création des ensembles d'entraînement et de validation, entraînement de modèles from scratch et en transfer learning, puis évaluation avec des indicateurs adaptés (MAE pour l'âge, accuracy pour les classes, matrices de confusion et visualisations). Les modèles retenus sont ensuite convertis en TensorFlow Lite pour être utilisés directement sur mobile.\n\nUn point fort du projet est la possibilité de choisir dans l'application entre plusieurs variantes de modèles, notamment une version from scratch et une version transfer learning, afin de comparer facilement les approches en conditions réelles d'utilisation.\n\nL'application Android permet de capturer un visage avec la caméra, d'exécuter l'inférence localement et d'afficher les résultats dans une interface simple. Elle intègre aussi l'authentification utilisateur, la gestion du profil (avec modification des informations personnelles), ainsi que la consultation de l'historique des prédictions, ce qui transforme le prototype IA en application utilisable de bout en bout.",
+    technologies: ["Python", "TensorFlow", "Keras", "NumPy", "scikit-learn", "Matplotlib", "Jupyter Notebook", "KaggleHub", "Kotlin", "Android", "AndroidX", "CameraX", "TensorFlow Lite", "Firebase", "Gradle"],
     github: "https://github.com/FLUMINOX7/SAE_AI",
     demo: null,
     image: '/assets/images/kaoai_detail1.webp',
@@ -92,14 +92,14 @@ export const projects = [
       '/assets/images/kaoai_detail3.webp',
       '/assets/images/kaoai_detail4.webp'
     ],
-    date: "2026-04-05",
+    date: "2026-03-04",
     status: "terminé"
   },
   {
     id: 5,
     title: "Portfolio Personnel",
     shortDescription: "Portfolio moderne développé de zéro avec React et Vite",
-    fullDescription: "Ce portfolio personnel est mon projet actuel, développé entièrement de zéro avec React et Vite pour présenter mes projets, compétences et parcours professionnel. Contrairement au premier portfolio basé sur un template, celui-ci a été conçu et codé intégralement par mes soins, me permettant d'avoir un contrôle total sur l'architecture et le design.\n\nLe site est entièrement responsive et s'adapte à tous les types d'écrans (mobile, tablette, desktop). Il intègre plusieurs fonctionnalités modernes : un mode sombre/clair avec système de thème personnalisable, un formulaire de contact fonctionnel via EmailJS permettant aux visiteurs de me contacter directement sans backend, une navigation fluide entre les différentes sections (Accueil, À propos, Projets, Passions, Contact), et des animations CSS subtiles pour améliorer l'expérience utilisateur.\n\nL'architecture du projet suit une organisation modulaire claire : composants réutilisables, gestion des données centralisée dans des fichiers dédiés, routage avec React Router pour une navigation SPA fluide, et styles CSS modernes avec variables CSS pour la gestion des thèmes. Le site présente tous mes projets universitaires et personnels avec des descriptions détaillées, mes passions et hobbies avec des liens vers mes profils (Chess.com, FIDE), et mon parcours académique et professionnel.\n\nCe projet me permet de mettre en pratique mes compétences en développement front-end moderne tout en ayant une vitrine professionnelle personnalisée pour mes travaux. Il représente ma progression en tant que développeur et ma capacité à créer une application web complète et soignée de A à Z.",
+    fullDescription: "Ce portfolio personnel est un projet développé entièrement de zéro avec React et Vite pour présenter mes projets, compétences et parcours professionnel. Contrairement au premier portfolio basé sur un template, celui-ci a été conçu et codé intégralement par mes soins, me permettant d'avoir un contrôle total sur l'architecture et le design.\n\nLe site est entièrement responsive et s'adapte à tous les types d'écrans (mobile, tablette, desktop). Il intègre plusieurs fonctionnalités modernes : un mode sombre/clair avec système de thème personnalisable, un formulaire de contact fonctionnel via EmailJS permettant aux visiteurs de me contacter directement sans backend, une navigation fluide entre les différentes sections (Accueil, À propos, Projets, Passions, Contact), et des animations CSS subtiles pour améliorer l'expérience utilisateur.\n\nL'architecture du projet suit une organisation modulaire claire : composants réutilisables, gestion des données centralisée dans des fichiers dédiés, routage avec React Router pour une navigation SPA fluide, et styles CSS modernes avec variables CSS pour la gestion des thèmes. Le site présente tous mes projets universitaires et personnels avec des descriptions détaillées, mes passions et hobbies, ainsi que mon parcours académique et professionnel.\n\nCe projet m'a permis de mettre en pratique mes compétences en développement front-end moderne tout en ayant une vitrine professionnelle personnalisée pour mes travaux. Il représente ma progression en tant que développeur et ma capacité à créer une application web complète et soignée de A à Z.",
     technologies: ["React", "Vite", "React Router", "EmailJS", "CSS3"],
     github: "https://github.com/FLUMINOX7/Ryan_website",
     demo: null,
@@ -107,17 +107,20 @@ export const projects = [
     coverImage: '/assets/images/portfolio_detail.png',
     detailImage: '/assets/images/portfolio_detail.png',
     date: "2025-11-10",
-    status: "en-cours"
+    status: "terminé"
   },
   {
     id: 8,
     title: "OtoRank - Application de Musique",
     shortDescription: "Application musicale Flutter multi-plateforme construite avec une Clean Architecture",
-    fullDescription: "OtoRank est une application de musique en cours de développement, conçue avec Flutter pour cibler Android, iOS et le Web. Le projet est structuré avec une Clean Architecture et une organisation Feature-First afin de garantir une base de code maintenable, testable et évolutive.\n\nL'architecture sépare clairement les couches Presentation, Domain et Data, avec des patterns comme Repository et l'injection de dépendances via GetIt. La gestion d'état est portée par BLoC, et le projet intègre des briques utiles pour une app musicale moderne : lecture audio, gestion des permissions, sélection de fichiers, stockage local, et tests automatisés.\n\nLe dépôt contient également une documentation technique détaillée (architecture, conventions, workflow Git/commits) qui reflète une approche professionnelle du développement logiciel.",
-    technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "GetIt", "Dartz", "Equatable", "Hive", "Shared Preferences", "just_audio", "audio_service", "permission_handler", "file_picker"],
+    fullDescription: "OtoRank est une application mobile de musique multi-fonction qui vous permet de gérer et organiser votre bibliothèque musicale de façon simple et efficace.\n\nPrincipales fonctionnalités : télécharger directement depuis YouTube vos morceaux préférés dans le format audio de votre choix, éditer facilement le son et la longueur des musiques selon vos envies, classer vos propres playlists grâce au système de classement intégré, consulter les paroles des chansons et accéder à des traductions pour mieux comprendre vos morceaux préférés. L'interface est conçue pour être intuitive et rapide à prendre en main.\n\nTechniquement, l'application est développée avec Flutter pour fonctionner de façon fluide sur Android, iOS et Web, en utilisant une architecture moderne et maintenable.",
+    technologies: ["Flutter", "Dart"],
     github: "https://github.com/FLUMINOX7/OtoRank",
     demo: null,
-    date: "2026-04-05",
+    image: '/assets/images/otorank_detail.webp',
+    coverImage: '/assets/images/otorank_cover.webp',
+    detailImages: ['/assets/images/otorank_detail.webp'],
+    date: "2025-12-20",
     status: "en-cours"
   }
 ];
