@@ -1,8 +1,8 @@
-# Ryan Website - Portfolio Personnel
+# Ryan — Portfolio
 
-Portfolio personnel présentant mon parcours, mes passions et mes projets informatiques.
+Site personnel présentant mon parcours, mes projets et mes centres d'intérêt.
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 Ryan_website/
@@ -20,75 +20,57 @@ Ryan_website/
 └── README.md
 ```
 
-## 🚀 Technologies
+## Technologies
 
-- React 19
+- React
 - Vite
 - React Router
-- CSS3
-- EmailJS
+- CSS
 
-## 🛠️ Installation et développement
+## Installation et développement
+
+1. Installer les dépendances :
 
 ```bash
 npm install
+```
+
+2. Lancer le serveur de développement :
+
+```bash
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173`.
+Le site sera accessible localement (par défaut sur `http://localhost:5173`).
 
-### Build local
+## Build local
+
+Pour générer une version optimisée :
 
 ```bash
 npm run build
+```
+
+Vous pouvez vérifier le résultat en local avec :
+
+```bash
 npm run preview
 ```
 
-## ☁️ Déploiement
+## Contribution
 
-### Vercel
+Contributions bienvenues : ouvrez une issue pour discuter d'une fonctionnalité ou proposez une pull request.
 
-Configuration recommandée :
+Convention simple de branches recommandée : `feature/*`, `fix/*`, `docs/*`.
 
-- Root Directory: `.`
-- Build Command: `npm run build`
-- Output Directory: `dist`
+## Structure du site
 
-Le site est ensuite déployé automatiquement à chaque push sur la branche connectée à Vercel.
+- Accueil — Présentation générale
+- À propos — Parcours
+- Passions — Centres d'intérêt
+- Projets — Exemples et détails
+- Contact — Formulaire de contact
 
-### GitHub Pages
-
-Possible aussi, mais moins pratique pour une SPA React/Vite avec routing client.
-
-## 🌿 Workflow Git
-
-### Branches principales
-- `main` - Version production
-- `develop` - Version de développement
-
-### Convention de branches
-- `feature/nom-fonctionnalite` - Nouvelles fonctionnalités
-- `fix/description-bug` - Corrections de bugs
-- `refactor/description` - Refactoring
-- `style/description` - Modifications CSS/UI
-- `docs/description` - Documentation
-
-### Convention de commits
-Format : `type(scope): description`
-
-Exemples :
-- `feat(projects): add project gallery`
-- `fix(footer): update social links`
-- `docs(readme): update deployment instructions`
-
-## 📝 Sections du site
-
-- **Accueil** - Présentation générale
-- **À propos** - Parcours professionnel et académique
-- **Passions** - Centres d'intérêt et hobbies
-- **Projets** - Portfolio de projets personnels
-- **Contact** - Formulaire de contact
-
-## 📄 Licence
+## Licence
 
 © 2026 Ryan. Tous droits réservés.
