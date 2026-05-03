@@ -120,7 +120,7 @@ export const projects = [
     image: '/assets/images/otorank_detail.webp',
     coverImage: '/assets/images/otorank_cover.webp',
     detailImages: ['/assets/images/otorank_detail.webp'],
-    date: "2026-04-05",
+    date: "2025-12-20",
     status: "en-cours"
   }
 ];
