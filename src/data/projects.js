@@ -131,6 +131,9 @@ export const projects = [
     technologies: ["Angular", "TypeScript", "Flask", "Python", "PostgreSQL", "Docker", "JWT", "FAISS", "OpenRouter", "DuckDuckGo", "Gunicorn", "SSR"],
     github: "https://github.com/FLUMINOX7/umAI",
     demo: null,
+    image: '/assets/images/umai_detail.png',
+    coverImage: '/assets/images/umai_cover.png',
+    detailImages: ['/assets/images/umai_detail1.png', '/assets/images/umai_detail2.png', '/assets/images/umai_detail3.png'],
     date: "2026-06-20",
     status: "terminé"
   }
