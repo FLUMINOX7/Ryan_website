@@ -122,6 +122,20 @@ export const projects = [
     detailImages: ['/assets/images/otorank_detail.webp'],
     date: "2025-12-20",
     status: "en-cours"
+  },
+  {
+    id: 9,
+    title: "umAI - Chatbot IA Culinaire avec RAG",
+    shortDescription: "Assistant conversationnel cuisine avec modes LLM, recherche web et RAG sur PDF",
+    fullDescription: "umAI est une application de chatbot spécialisée dans la cuisine, conçue comme une architecture full-stack complète avec trois services : un frontend Angular SSR, un backend Flask et une base PostgreSQL. Le coeur du projet repose sur trois modes de réponse complémentaires. En mode LLM seul, l'assistant répond directement via OpenRouter. En mode Web, le backend interroge DuckDuckGo puis synthétise la réponse avec le modèle. En mode RAG, les réponses sont ancrées dans un corpus de PDF culinaires indexés localement avec FAISS, ce qui améliore la pertinence et la traçabilité des réponses sur des contenus ciblés.\n\nLe projet inclut aussi des fonctionnalités applicatives complètes : authentification JWT, gestion des utilisateurs, historique des conversations et édition de messages. L'orchestration Docker Compose permet de lancer rapidement toute la stack (frontend, backend, base de données), avec persistance des données PostgreSQL et de l'index vectoriel. Une étape d'ingestion est prévue pour construire l'index RAG depuis les documents PDF et garantir le fonctionnement du mode documentaire.\n\nCe projet terminé en juin 2026 m'a permis de consolider des compétences clés en IA appliquée (RAG, vectorisation, intégration LLM), en architecture web distribuée, et en industrialisation d'une application moderne avec conteneurisation, séparation claire des services et documentation technique exploitable.",
+    technologies: ["Angular", "TypeScript", "Flask", "Python", "PostgreSQL", "Docker", "JWT", "FAISS", "OpenRouter", "DuckDuckGo", "Gunicorn", "SSR"],
+    github: "https://github.com/FLUMINOX7/umAI",
+    demo: null,
+    image: '/assets/images/umai_detail.png',
+    coverImage: '/assets/images/umai_cover.png',
+    detailImages: ['/assets/images/umai_detail1.png', '/assets/images/umai_detail2.png', '/assets/images/umai_detail3.png'],
+    date: "2026-06-20",
+    status: "terminé"
   }
 ];
 
