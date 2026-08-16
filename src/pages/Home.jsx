@@ -25,7 +25,7 @@ const skillIconMap = {
 const Home = () => {
   useDocumentTitle('Accueil');
 
-  const featuredProjectIds = [7, 6, 1];
+  const featuredProjectIds = [9, 7, 1];
   const featuredProjects = featuredProjectIds
     .map((projectId) => projects.find((project) => project.id === projectId))
     .filter(Boolean);
